@@ -1,5 +1,3 @@
-# https://Lahar.github.io
-
 /**
  * Sell – Bootstrap 4 e-commerce template v. 1.3.0
  * Homepage: https://themes.getbootstrap.com/product/sell-bootstrap-4-e-commerce-template/
