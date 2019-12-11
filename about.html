@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About Us</title>
+   
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -31,7 +32,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
     <style >
       .overlay-content{
@@ -45,7 +46,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-sticky navbar-airy bg-fixed-white">
         <div class="container-fluid">  
           <!-- Navbar Header  --><a href="index.html" class="navbar-brand">
-            <amp-img src="img/Lahar/LAHAR-Logo.png" layout="responsive"  class="navbar-brand img-fluid" width="230" height="130"></amp-img>
+            <amp-img src="img/Lahar/LAHAR-Logo.png" layout="responsive"  class="img-fluid" width="230" height="130"></amp-img>
             </a>
           <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
@@ -126,7 +127,7 @@
            
 
           <amp-img class=" bg-image mx-auto text-center img-fluid" layout="fixed" width="400" height="217" src="img/Lahar/Fairtrade-Logo.webp" alt="image">
-                                    <amp-img fallback layout="fixed" src="img/Lahar/Fairtrade-Logo.png"  class=" bg-image mx-auto text-center img-fluid" width="400" height="217"  alt="image"></amp-img></amp-img> 
+                                    <amp-img fallback layout="responsive" src="img/Lahar/Fairtrade-Logo.png"  class=" bg-image mx-auto text-center img-fluid" width="400" height="217"  alt="image"></amp-img></amp-img> 
 
                                   </div>
         </div>
@@ -141,7 +142,14 @@
 
             </div>
           </div>
-          <div class="col-lg-6 p-lg-0 mt-4 mb-4 about-image-column order-lg-1"><img src="img/Lahar/GOTS-Logo.png" alt="" class="bg-image"></div>
+          <div class="col-lg-6 p-lg-0 mt-4 mb-4 about-image-column order-lg-1">
+            <div class="container my-auto">
+             <amp-img class="mx-auto text-center img-fluid my-auto" layout="responsive" width="700" height="389" src="img/Lahar/GOTS-Logo.webp" alt="image">
+
+            <amp-img fallback layout="responsive" src="img/Lahar/GOTS-Logo.png" alt="" class="my-auto mx-auto text-center img-fluid" width="700" height="389">
+            </amp-img></amp-img>
+          </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg-6 about-text-column bg-gray-100">
@@ -160,7 +168,10 @@
               
             </div>
           </div>
-          <div class="col-lg-6 p-lg-0 about-image-column"><img src="img/Lahar/CottonPlant.jpg" alt="" class="bg-image"></div>
+          <div class="col-lg-6 p-lg-0 about-image-column">
+            <img src="img/Lahar/CottonPlant.jpg" alt="" class="bg-image">
+
+          </div>
         </div>
       </div>
     </section>
