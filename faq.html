@@ -33,6 +33,15 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   </head>
+
+  <style>
+   html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  </style>
+
   <body>
     <header class="header">
      <!-- Top Bar--
@@ -70,7 +79,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-sticky navbar-airy bg-fixed-white">
         <div class="container-fluid">  
           <!-- Navbar Header  --><a href="index.html" class="navbar-brand">
-            <img src="img/Lahar/LAHAR-Logo.png"  class="img-fluid" width="230" height="130">
+              <amp-img src="img/Lahar/LAHAR-Logo.png" layout="responsive"   width="230" height="130"></amp-img>
             </a>
           <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
@@ -81,7 +90,7 @@
                   Home</a>
                   
               </li>
-              <li class="nav-item"><a href="about.html" class="nav-link">About Lahar</a>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a>
               </li>
              
               <!-- /Megamenu end-->
@@ -104,27 +113,7 @@
       </nav>
       <!-- /Navbar -->
       
-      <!-- Fullscreen search area-->
-      <div class="search-area-wrapper">
-        <div class="search-area d-flex align-items-center justify-content-center">
-          <div class="close-btn">
-            <svg class="svg-icon svg-icon-light w-3rem h-3rem">
-              <use xlink:href="#close-1"> </use>
-            </svg>
-          </div>
-          <form action="#" class="search-area-form">
-            <div class="form-group position-relative">
-              <input type="search" name="search" id="search" placeholder="What are you looking for?" class="search-area-input">
-              <button type="submit" class="search-area-button">
-                <svg class="svg-icon">
-                  <use xlink:href="#search-1"> </use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- /Fullscreen search area-->
+      
       
     </header>
     <!-- Hero Section-->
@@ -245,7 +234,7 @@ If you would like more information Standard and Manual version 5.0 - https://www
       <div class="py-6 bg-gray-300 text-muted"> 
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
               <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
               <p>Style with a Conscience, where Ethics meet Fashion! </p>
               <ul class="list-inline">
@@ -256,27 +245,18 @@ If you would like more information Standard and Manual version 5.0 - https://www
                 <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-              <h6 class="text-uppercase text-dark mb-3">Shop</h6>
-              <ul class="list-unstyled">
-                <li> <a href="#" class="text-muted">For Women</a></li>
-                <li> <a href="#" class="text-muted">For Men</a></li>
-                <li> <a href="#" class="text-muted">Stores</a></li>
-                <li> <a href="#" class="text-muted">Our Blog</a></li>
-                <li> <a href="#" class="text-muted">Shop</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+           
+            <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Company</h6>
               <ul class="list-unstyled">
-                <li> <a href="#" class="text-muted">Login                    </a></li>
-                <li> <a href="#" class="text-muted">Register                    </a></li>
-                <li> <a href="#" class="text-muted">Wishlist                    </a></li>
-                <li> <a href="#" class="text-muted">Our Products                    </a></li>
-                <li> <a href="#" class="text-muted">Checkouts                    </a></li>
+                <li> <a href="index.html" class="text-muted">Home                    </a></li>
+                <li> <a href="about.html" class="text-muted">About                    </a></li>
+                <li> <a href="whyus.html" class="text-muted">Whu Us                    </a></li>
+                <li> <a href="faq.html" class="text-muted">FAQ                    </a></li>
+                <li> <a href="bookings.html" class="text-muted">Bookings                    </a></li>
               </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5 col-md-4 col-sm-8">
               <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
               <p class="mb-3">Enter your email address to receive latest collections and discounts to your Inbox.</p>
               <form action="#" id="newsletter-form">
