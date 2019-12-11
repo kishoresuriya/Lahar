@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!-- Price Slider Stylesheets -->
     <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
     <!-- Google fonts - Playfair Display-->
@@ -30,7 +31,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
-     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+
+     <style amp-custom>
+       
+
+        @media  only screen and (max-width: 768px){
+
+          .lg-device{
+
+            display: none;
+          }
+        }
+
+
+        @media only screen and (min-width: 769px){
+
+          .md-device{
+
+            display: none;
+          }
+        }
+
+
+     </style>
   </head>
   <body>
     <header class="header header-absolute">
@@ -70,7 +94,7 @@
         <div class="container-fluid">  
           <!-- Navbar Header  --><a href="index.html" class="navbar-brand">
            
-            <amp-img src="img/Lahar/LAHAR-Logo.png" layout="responsive"  class="navbar-brand img-fluid" width="230" height="130"></amp-img>
+            <amp-img layout="fixed" class="img-fluid" width="100" height="40" src="img/Lahar/LAHAR.png"></amp-img>
             </a>
           <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
@@ -107,7 +131,7 @@
     
       
     </header>
-    <section class="mh-full-screen">
+    <section class="mh-full-screen lg-device">
       <!-- Circle Slider-->
       <div class="owl-carousel owl-theme circle-slider">
         <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
@@ -155,6 +179,58 @@
       </div>
       <!-- /Circle Slider-->
     </section>
+
+
+
+    <section class="mh-full-screen md-device">
+      <!-- Circle Slider-->
+      <div class="owl-carousel owl-theme circle-slider text-white">
+        <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
+          <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+            <div class="w-100">
+              <div class="row py-5">
+                <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                  <h5 class="text-uppercase text-white mb-3 letter-spacing-5"> Special</h5>
+                  <h2 class="mb-3">Customization Hub</h2>
+                  <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
+                  <p> <a href="whyus.html" class="btn btn-outline-light">FABRIC OPTIONS</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+          <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+            <div class="w-100">
+              <div class="row py-5">
+                <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                  <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h5>
+                  <h2 class="mb-3">Style with a Conscience!</h2>
+                  <p class="lead mb-4">Fashion & Ethics don't have to be mutually exclusive.</p>
+                  <p> <a href="about.html" class="btn btn-outline-dark"> ABOUT US</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+          <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+            <div class="w-100">
+              <div class="row py-5">
+                <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                  <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h5>
+                  <h2 class="mb-3">To suit your style</h2>
+                  <p class="lead mb-4">Clothing made to fit your needs</p>
+                  <p> <a href="bookings.html" class="btn btn-outline-dark">GET OUTFITTED</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Circle Slider-->
+    </section>
+
     <section class="py-6">
       <div class="container">
         <div class="row">
