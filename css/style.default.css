@@ -4972,7 +4972,7 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1.1rem 1rem;
+  padding: 0.8rem 0.8rem;
 }
 
 .navbar > .container,
@@ -4989,7 +4989,7 @@ input[type="button"].btn-block {
 
 .navbar-brand {
  
-  height: 50px;
+  height: 3px;
   
 
 }
@@ -5019,9 +5019,9 @@ input[type="button"].btn-block {
 }
 
 .navbar-text {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  display:block;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .navbar-collapse {
