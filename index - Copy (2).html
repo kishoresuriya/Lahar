@@ -34,42 +34,54 @@
 
 
     <style amp-custom>
-        @media only screen and (min-width:767px) and (max-width:2046px) {
+        @media only screen and (min-width:767px) and (max-width: 1920px) {
 
             .md-device {
                 display: none;
             }
 
-            .xl-device{
-                display: none;
-            }
-           
         }
 
+         @media only screen and (min-width:767px) and (max-width: 4096px){
+          .md-txt-device{
+                display: none;
+            }
+
+        }
         @media only screen and (max-width:766px) {
 
             .lg-device {
                 display: none;
             }
-            .xl-device {
+
+             .xl-device {
                 display: none;
             }
+
+            
         }
 
 
-        @media only screen and (min-width:2047px) {
+         @media only screen and (min-width:2047px) {
+        .xs-device{
+                display: none;
+            }
 
-            
-            .md-device {
+            .md-device{
                 display: none;
             }
 
             .lg-device{
                 display: none;
             }
-           
+            
         }
 
+         @media only screen and (max-width:2046px) {
+        .xl-device{
+                display: none;
+            }
+        }
 
 
         @media only screen and (min-width:320px) {
@@ -151,7 +163,7 @@
         }
 
 
-        @media only screen and (min-width:2047px) {
+        @media only screen and (min-width:2048px) {
 
             .logo-style {
                 width: 220px;
@@ -166,6 +178,31 @@
                 padding: 0.8rem 0.8rem;
             }
         }
+
+
+
+        @media only screen and (min-width:4096px) {
+
+            .logo-style {
+                width: 220px;
+                height: 135px;
+                margin-top: -67px;
+                margin-left: 415px;
+            }
+
+
+            .navbar {
+                font-size: 12px;
+                padding: 0.8rem 0.8rem;
+                height: 10px;
+            }
+
+            .nav-item{
+                font-size: 30px;
+            }
+
+        }
+
 
     </style>
 </head>
@@ -223,7 +260,6 @@
 
 
     </header>
-
     <section class="mh-full-screen lg-device">
         <!-- Circle Slider-->
         <div class="owl-carousel owl-theme circle-slider">
@@ -274,6 +310,55 @@
     </section>
 
 
+    <section class=" xl-device">
+        <!-- Circle Slider-->
+        <div class="owl-carousel owl-theme circle-slider">
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h3 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h3>
+                                <h1 class="mb-3">Customization Hub</h1>
+                                <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
+                                <p> <a href="whyus.html" class="btn btn-outline-dark">FABRIC OPTIONS</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                                <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h5>
+                                <h2 class="mb-3">Style with a Conscience!</h2>
+                                <p class="lead mb-4">Fashion & Ethics don't have to be mutually exclusive.</p>
+                                <p> <a href="about.html" class="btn btn-outline-dark"> ABOUT US</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h5>
+                                <h2 class="mb-3">To suit your style</h2>
+                                <p class="lead mb-4">Clothing made to fit your needs</p>
+                                <p> <a href="bookings.html" class="btn btn-outline-dark">GET OUTFITTED</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Circle Slider-->
+    </section>
+    
 
     <section class="mh-full-screen md-device">
         <!-- Circle Slider-->
@@ -324,8 +409,10 @@
         <!-- /Circle Slider-->
     </section>
 
-    <section class="py-6 lg-device">
-        <div class="container">
+    <section class="py-6">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 col-md-10 col-sm-10 mx-auto">
             <div class="row">
                 <div class="col-xl-8 mb-5">
                     <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
@@ -340,578 +427,21 @@
 
 
 
-                        <amp-img class="img-fluid" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                        <amp-img class="xs-device img-fluid" layout="responsive" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
                             <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
                         </amp-img>
+
+
+                        <amp-img class="xl-device img-fluid" layout="responsive" width="620" height="620" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                            <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="920" height="920" alt="image"></amp-img>
+                        </amp-img>
+
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail-2.html" class="text-dark td-none">
-                    
+                             <h3 class="md-txt-device">Customize<br> your<br> Hoodies </h3>
                             <h2 class="lg-device">Customize<br> your<br> Hoodies </h2>
-                            <!-- <p class="text-muted">$39.90</p>  -->
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
-                    </div>
-                </div>
-                <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
-                    <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
-                        <a href="detail.html" class="text-dark td-none">
-                          
-                            <h2 class="lg-device">Customize<br> your<br> Sweaters </h2>
-                        </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail.html">
-
-
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Coat.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Coat.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7 mb-4 mb-lg-5 space">
-                    <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
-                        <a href="detail-2.html" class="text-dark td-none">
-                        
-                            <h2 class="lg-device">Customize<br> your <br>T Shirts</h2>
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail-2.html">
-
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/T-Shirts.jpg" class="img-fluid" width="600" height="400" alt="image"></amp-img>
-                            </amp-img>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-auto pt-lg-5 mb-4 mb-lg-5 space">
-                    <a href="detail.html" class="text-dark td-none">
-
-
-                        <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
-
-                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Scarves.jpg" class="img-fluid" width="300" height="378" alt="image"></amp-img>
-                        </amp-img>
-
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail.html" class="text-dark td-none">
-                  
-                            <h2 class="lg-device">Customize<br> your<br> Scarves</h2>
-                            
-                        </a>
-                        <p> <a class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 pt-lg-3 mb-4 mb-lg-5 space">
-                    <a href="detail-2.html">
-
-
-                        <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
-
-                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Pants.jpg" class="img-fluid" width="400" height="400" alt="image"></amp-img>
-                        </amp-img>
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
-                        
-                            <h2 class="lg-device">Customize<br> your<br> Pants </h2>
-                           
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 ml-auto space">
-                    <div class="position-absolute z-index-5 py-6">
-                        <a href="detail.html" class="text-dark td-none">
-                        
-                            <h2 class="lg-device">Customize<br> your<br> Socks </h2>
-                           
-                        </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail.html">
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
-
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="py-6 md-device">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 mb-5">
-                    <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
-                    <h3>Customize your knitwear
-                    </h3>
-                    <p class="lead text-muted">Every product is customizable based on the buyer’s needs including labeling. Costs vary based on customizations chosen </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
-                    <a href="detail-2.html">
-
-
-
-                        <amp-img class="img-fluid" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
-                            <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
-                        </amp-img>
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
-                             <h3 class="md-device">Customize<br> your<br> Hoodies </h3>
-                        
-                            <!-- <p class="text-muted">$39.90</p>  -->
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
-                    </div>
-                </div>
-                <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
-                    <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
-                        <a href="detail.html" class="text-dark td-none">
-                            <h3 class="md-device">Customize<br> your<br> Sweaters </h3>
-                         
-                        </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail.html">
-
-
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Coat.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Coat.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7 mb-4 mb-lg-5 space">
-                    <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
-                        <a href="detail-2.html" class="text-dark td-none">
-                            <h3 class="md-device">Customize<br> your <br>T Shirts</h3>
-                           
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail-2.html">
-
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/T-Shirts.jpg" class="img-fluid" width="600" height="400" alt="image"></amp-img>
-                            </amp-img>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-auto pt-lg-5 mb-4 mb-lg-5 space">
-                    <a href="detail.html" class="text-dark td-none">
-
-
-                        <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
-
-                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Scarves.jpg" class="img-fluid" width="300" height="378" alt="image"></amp-img>
-                        </amp-img>
-
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail.html" class="text-dark td-none">
-                            <h3 class="md-device">Customize<br> your<br> Scarves</h3>
-                           
-                            
-                        </a>
-                        <p> <a class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 pt-lg-3 mb-4 mb-lg-5 space">
-                    <a href="detail-2.html">
-
-
-                        <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
-
-                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Pants.jpg" class="img-fluid" width="400" height="400" alt="image"></amp-img>
-                        </amp-img>
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
-                               <h3 class="md-device">Customize<br> your<br> Pants </h3>
-                           
-                           
-                        </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 ml-auto space">
-                    <div class="position-absolute z-index-5 py-6">
-                        <a href="detail.html" class="text-dark td-none">
-                            <h3 class="md-device">Customize<br> your<br> Socks </h3>
-                           
-                           
-                        </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
-                    </div>
-                    <div class="ml-6">
-                        <a href="detail.html">
-
-                            <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
-
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
-
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="md-device" style="background-color: #c8d0d3;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-black text-center py-6">
-                    <h2 class="display-4 text-uppercase mb-4">Pre Order Discount</h2>
-                    <p class="mb-0">Up to</p>
-                    <h2 class="display-1 font-weight-bold mb-3">30%</h2>
-                    <p class="mb-5"> Book your orders in advance</p>
-                    <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
-                </div>
-                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="lg-device" style="background-color: #c8d0d3;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-black text-center py-6">
-                    <h2 class="display-4 text-uppercase mb-4">Pre Order Discount</h2>
-                    <p class="mb-0">Up to</p>
-                    <h2 class="display-1 font-weight-bold mb-3">30%</h2>
-                    <p class="mb-5"> Book your orders in advance</p>
-                    <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
-                </div>
-                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="main-footer lg-device">
-        <!-- Services block-->
-        <div class="bg-gray-100 text-dark-700 py-6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#delivery-time-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">Free shipping &amp; return</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">Free Shipping over $300</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#money-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">Money back guarantee</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#customer-support-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">001-312-978-5743</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">Call for Support</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main block - menus, subscribe form-->
-        <div class="py-6 bg-gray-300 text-muted">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
-                        <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
-                        <p>Style with a Conscience, where Ethics meet Fashion! </p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
-                        <h6 class="text-uppercase text-dark mb-3">Company</h6>
-                        <ul class="list-unstyled">
-                            <li> <a href="index.html" class="text-muted">Home                    </a></li>
-                            <li> <a href="about.html" class="text-muted">About                    </a></li>
-                            <li> <a href="whyus.html" class="text-muted">Whu Us                    </a></li>
-                            <li> <a href="faq.html" class="text-muted">FAQ                    </a></li>
-                            <li> <a href="bookings.html" class="text-muted">Bookings                    </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-md-4 col-sm-8">
-                        <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
-                        <p class="mb-3">Enter your email address to receive latest collections and discounts to your Inbox.</p>
-                        <form action="#" id="newsletter-form">
-                            <div class="input-group mb-3">
-                                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright section of the footer-->
-        <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <p class="mb-md-0">&copy; 2019 Lahar.
-                            <!-- By SixtyOneSteps Advertising Pvt Ltd -->All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                            <li class="list-inline-item"><img src="img/visa.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/mastercard.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/paypal.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/western-union.svg" alt="..." class="w-2rem"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer-->
-    
-
-
-    <footer class="main-footer md-device">
-        <!-- Services block-->
-        <div class="bg-gray-100 text-dark-700 py-6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#delivery-time-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">Free shipping &amp; return</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">Free Shipping over $300</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#money-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">Money back guarantee</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 service-column">
-                        <svg class="svg-icon service-icon">
-                <use xlink:href="#customer-support-1"> </use>
-              </svg>
-                        <div class="service-text">
-                            <h6 class="text-uppercase">001-312-978-5743</h6>
-                            <p class="text-muted font-weight-light text-sm mb-0">Call for Support</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main block - menus, subscribe form-->
-        <div class="py-6 bg-gray-300 text-muted">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
-                        <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
-                        <p>Style with a Conscience, where Ethics meet Fashion! </p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
-                        <h6 class="text-uppercase text-dark mb-3">Company</h6>
-                        <ul class="list-unstyled">
-                            <li> <a href="index.html" class="text-muted">Home                    </a></li>
-                            <li> <a href="about.html" class="text-muted">About                    </a></li>
-                            <li> <a href="whyus.html" class="text-muted">Whu Us                    </a></li>
-                            <li> <a href="faq.html" class="text-muted">FAQ                    </a></li>
-                            <li> <a href="bookings.html" class="text-muted">Bookings                    </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-md-4 col-sm-8">
-                        <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
-                        <p class="mb-3">Enter your email address to receive latest collections and discounts to your Inbox.</p>
-                        <form action="#" id="newsletter-form">
-                            <div class="input-group mb-3">
-                                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright section of the footer-->
-        <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <p class="mb-md-0">&copy; 2019 Lahar.
-                            <!-- By SixtyOneSteps Advertising Pvt Ltd -->All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                            <li class="list-inline-item"><img src="img/visa.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/mastercard.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/paypal.svg" alt="..." class="w-2rem"></li>
-                            <li class="list-inline-item"><img src="img/western-union.svg" alt="..." class="w-2rem"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /Footer end-->
-
-
-    <!--  Xl-Device -->
-
-
-
-     <section class="mh-full-screen xl-device">
-        <!-- Circle Slider-->
-        <div class="owl-carousel owl-theme circle-slider">
-            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
-                    <div class="w-100">
-                        <div class="row py-5">
-                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
-                                <h5 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h5>
-                                <h2 class="mb-3">Customization Hub</h2>
-                                <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
-                                <p> <a href="whyus.html" class="btn btn-outline-dark">FABRIC OPTIONS</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
-                    <div class="w-100">
-                        <div class="row py-5">
-                            <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
-                                <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h5>
-                                <h2 class="mb-3">Style with a Conscience!</h2>
-                                <p class="lead mb-4">Fashion & Ethics don't have to be mutually exclusive.</p>
-                                <p> <a href="about.html" class="btn btn-outline-dark"> ABOUT US</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
-                    <div class="w-100">
-                        <div class="row py-5">
-                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
-                                <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h5>
-                                <h2 class="mb-3">To suit your style</h2>
-                                <p class="lead mb-4">Clothing made to fit your needs</p>
-                                <p> <a href="bookings.html" class="btn btn-outline-dark">GET OUTFITTED</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Circle Slider-->
-    </section>
-
-      <section class="py-6 xl-device">
-        <div class="row">
-            <div class="col-xl-9 mx-auto">
-            <div class="row">
-                <div class="col-xl-8 mb-5">
-                    <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
-                    <h3>Customize your knitwear
-                    </h3>
-                    <p class="lead text-muted">Every product is customizable based on the buyer’s needs including labeling. Costs vary based on customizations chosen </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
-                    <a href="detail-2.html">
-
-
-
-                        <amp-img class="img-fluid" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
-                            <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
-                        </amp-img>
-
-                    </a>
-                    <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
-                             
                             <h1 class="xl-device">Customize<br> your<br> Hoodies </h1>
                             <!-- <p class="text-muted">$39.90</p>  -->
                         </a>
@@ -921,7 +451,8 @@
                 <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
                     <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
                         <a href="detail.html" class="text-dark td-none">
-                           
+                            <h3 class="md-txt-device">Customize<br> your<br> Sweaters </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Sweaters </h2>
                             <h1 class="xl-device">Customize<br> your<br> Sweaters </h1>
                         </a>
                         <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
@@ -943,7 +474,8 @@
                 <div class="col-lg-7 mb-4 mb-lg-5 space">
                     <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
                         <a href="detail-2.html" class="text-dark td-none">
-                            
+                            <h3 class="md-txt-device">Customize<br> your <br>T Shirts</h3>
+                            <h2 class="lg-device">Customize<br> your <br>T Shirts</h2>
                             <h1 class="xl-device">Customize<br> your <br>T Shirts</h1>
                         </a>
                         <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
@@ -973,7 +505,8 @@
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail.html" class="text-dark td-none">
-                         
+                            <h3 class="md-txt-device">Customize<br> your<br> Scarves</h3>
+                            <h2 class="lg-device">Customize<br> your<br> Scarves</h2>
                             <h1 class="xl-device">Customize<br> your<br> Scarves</h1>
                             
                         </a>
@@ -994,8 +527,9 @@
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail-2.html" class="text-dark td-none">
-                             
-                           <h1 class="xl-device">Customize<br> your<br> Pants </h1>
+                               <h3 class="md-txt-device">Customize<br> your<br> Pants </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Pants </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Pants </h1>
                            
                         </a>
                         <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
@@ -1005,8 +539,9 @@
                 <div class="col-lg-8 ml-auto space">
                     <div class="position-absolute z-index-5 py-6">
                         <a href="detail.html" class="text-dark td-none">
-                           
-                           <h1 class="xl-device">Customize<br> your<br> Socks </h1>
+                            <h3 class="md-txt-device">Customize<br> your<br> Socks </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Socks </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Socks </h1>
                            
                         </a>
                         <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
@@ -1023,41 +558,86 @@
                 </div>
 
             </div>
-        </div>
+            
     </div>
+</div>
+        <!-- </div> -->
+
     </section>
-    <section class="xl-device" style="background-color: #c8d0d3;">
+
+
+    <section class="md-device" style="background-color: #c8d0d3;">
         <div class="row">
             <div class="col-xl-9 mx-auto">
             <div class="row">
-                <div class="col-lg-6 text-black text-center py-6">
-                    <h1 class="display-4 text-uppercase mb-4">Pre Order Discount</h1>
+                <div class="col-lg-6 text-black text-center mx-auto">
+                    <h3 class="display-4 text-uppercase mb-4 pt-5">Pre Order Discount</h3>
                     <p class="mb-0">Up to</p>
-                    <h1 class="display-1 font-weight-bold mb-3">30%</h1>
-                    <p class="mb-5 text-lg"> Book your orders in advance</p>
-                    <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
+                    <h3 class="display-3 font-weight-bold mb-3">30%</h3>
+                    <p class="mb-5"> Book your orders in advance</p>
+                    <p class="pb-5"><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
                 </div>
-                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
+                <div style="background: url(img/photo/lahar-homepage.jpg) no-repeat; background-size: cover; background-position: center;" class="col-lg-5 mx-auto py-6"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="lg-device" style="background-color: #c8d0d3;">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+            <div class="row">
+                <div class="col-lg-6 text-black text-center">
+                    <h3 class="display-4 text-uppercase mb-4 pt-5">Pre Order Discount</h3>
+                    <p class="mb-0">Up to</p>
+                    <h3 class="display-3 font-weight-bold mb-3">30%</h3>
+                    <p class="mb-5"> Book your orders in advance</p>
+                    <p class="pb-5"><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
+                </div>
+                <div style="background: url(img/photo/lahar-homepage.jpg) no-repeat; background-size: cover; background-position: center;" class="col-lg-6 py-6"></div>
             </div>
         </div>
     </div>
     </section>
 
 
+     <section class="xl-device" style="background-color: #c8d0d3;">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+            <div class="row">
+                <div class="col-lg-6 text-black text-center">
+                    <h1 class="display-1 text-uppercase mb-4 pt-5">Pre Order Discount</h1>
+                    <p class="mb-0">Up to</p>
+                    <h1 class="display-1 font-weight-bold mb-3">30%</h1>
+                    <p class="mb-5"> Book your orders in advance</p>
+                    <p class="pb-5"><a href="#" class="btn btn-lg btn-outline-dark">BOOKINGS</a></p>
+                </div>
+                <div style="background: url(img/photo/lahar-homepage.jpg) no-repeat; ; background-position: center; " class="col-lg-6 "></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
     <!-- Footer-->
-    <footer class="main-footer xl-device">
+    <footer class="main-footer">
         <!-- Services block-->
         <div class="bg-gray-100 text-dark-700 py-6">
             <div class="row">
-                <div class="col-xl-9 mx-auto">
+                 <div class="col-xl-9 mx-auto">
                 <div class="row">
                     <div class="col-lg-4 service-column">
                         <svg class="svg-icon service-icon">
                 <use xlink:href="#delivery-time-1"> </use>
               </svg>
                         <div class="service-text">
-                            <h4 class="text-uppercase">Free shipping &amp; return</h4>
-                            <p class="text-muted font-weight-light text-lg mb-0">Free Shipping over $300</p>
+                            <h6 class="lg-device text-uppercase">Free shipping &amp; return</h6>
+                            <p class="lg-device text-muted font-weight-light text-sm mb-0">Free Shipping over $300</p>
+
+                            <h3 class="xl-device text-uppercase">Free shipping &amp; return</h3>
+                            <p class="xl-device text-muted font-weight-light text-lg text-sm mb-0">Free Shipping over $300</p>
+
                         </div>
                     </div>
                     <div class="col-lg-4 service-column">
@@ -1065,8 +645,11 @@
                 <use xlink:href="#money-1"> </use>
               </svg>
                         <div class="service-text">
-                            <h4 class="text-uppercase">Money back guarantee</h4>
-                            <p class="text-muted font-weight-light text-lg mb-0">30 Days Money Back Guarantee</p>
+                            <h6 class="lg-device text-uppercase">Money back guarantee</h6>
+                            <p class="lg-device text-muted font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
+
+                             <h3 class="xl-device text-uppercase">Money back guarantee</h3>
+                            <p class="xl-device text-muted text-lg font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
                         </div>
                     </div>
                     <div class="col-lg-4 service-column">
@@ -1074,22 +657,26 @@
                 <use xlink:href="#customer-support-1"> </use>
               </svg>
                         <div class="service-text">
-                            <h4 class="text-uppercase">001-312-978-5743</h4>
-                            <p class="text-muted font-weight-light text-lg mb-0">Call for Support</p>
+                            <h6 class="lg-device text-uppercase">001-312-978-5743</h6>
+                            <p class="lg-device text-muted font-weight-light text-sm mb-0">Call for Support</p>
+
+                             <h3 class="xl-device text-uppercase">001-312-978-5743</h3>
+                            <p class="xl-device text-lg text-muted font-weight-light text-sm mb-0">Call for Support</p>
+
                         </div>
                     </div>
                 </div>
+                 </div>
             </div>
-        </div>
         </div>
         <!-- Main block - menus, subscribe form-->
         <div class="py-6 bg-gray-300 text-muted">
             <div class="row">
-                 <div class="col-xl-9 mx-auto">
-                <div class="row">
+                  <div class="col-xl-9 mx-auto">
+                <div class="row lg-device">
                     <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
                         <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
-                        <p class="text-lg">Style with a Conscience, where Ethics meet Fashion! </p>
+                        <p>Style with a Conscience, where Ethics meet Fashion! </p>
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"></i></a></li>
@@ -1100,7 +687,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase text-dark mb-3">Company</h4>
+                        <h6 class="text-uppercase text-dark mb-3">Company</h6>
                         <ul class="list-unstyled">
                             <li> <a href="index.html" class="text-muted">Home                    </a></li>
                             <li> <a href="about.html" class="text-muted">About                    </a></li>
@@ -1110,8 +697,86 @@
                         </ul>
                     </div>
                     <div class="col-lg-5 col-md-4 col-sm-8">
-                        <h4 class="text-uppercase text-dark mb-3">Offers & Discounts</h4>
+                        <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
                         <p class="mb-3">Enter your email address to receive latest collections and discounts to your Inbox.</p>
+                        <form action="#" id="newsletter-form">
+                            <div class="input-group mb-3">
+                                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="row lg-device text-dark">
+                    <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
+                        <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
+                        <p>Style with a Conscience, where Ethics meet Fashion! </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
+                        <h6 class="text-uppercase text-dark mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li> <a href="index.html" class="text-muted">Home                    </a></li>
+                            <li> <a href="about.html" class="text-muted">About                    </a></li>
+                            <li> <a href="whyus.html" class="text-muted">Whu Us                    </a></li>
+                            <li> <a href="faq.html" class="text-muted">FAQ                    </a></li>
+                            <li> <a href="bookings.html" class="text-muted">Bookings                    </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8">
+                        <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
+                        <p class="mb-3">Enter your email address to receive latest collections and discounts to your Inbox.</p>
+                        <form action="#" id="newsletter-form">
+                            <div class="input-group mb-3">
+                                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="row xl-device">
+                    <div class="col-lg-3  col-md-4 col-sm-8 mb-5 mb-lg-0 mx-auto">
+                        <div class="font-weight-bold text-uppercase text-xl text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
+                        <p>Style with a Conscience, where Ethics meet Fashion! </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0 mx-auto">
+                        <h4 class="text-uppercase text-dark mb-3">Company</h4>
+                        <ul class="list-unstyled">
+                            <li> <a href="index.html" class="text-muted text-lg">Home                    </a></li>
+                            <li> <a href="about.html" class="text-muted text-lg">About                    </a></li>
+                            <li> <a href="whyus.html" class="text-muted text-lg">Whu Us                    </a></li>
+                            <li> <a href="faq.html" class="text-muted text-lg">FAQ                    </a></li>
+                            <li> <a href="bookings.html" class="text-muted text-lg">Bookings                    </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-8 mx-auto">
+                        <h4 class="text-uppercase text-dark mb-3 ">Offers & Discounts</h4>
+                        <p class="mb-3 text-lg">Enter your email address to receive latest collections and discounts to your Inbox.</p>
                         <form action="#" id="newsletter-form">
                             <div class="input-group mb-3">
                                 <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
@@ -1127,7 +792,8 @@
         </div>
         <!-- Copyright section of the footer-->
         <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-            <div class="container">
+            <div class="row">
+                 <div class="col-xl-9 mx-auto">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-left">
                         <p class="mb-md-0">&copy; 2019 Lahar.
@@ -1143,10 +809,10 @@
                     </div>
                 </div>
             </div>
+             </div>
         </div>
     </footer>
-
-
+    <!-- /Footer end-->
     <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
     <!-- JavaScript files-->
     <script>
