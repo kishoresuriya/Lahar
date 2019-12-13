@@ -34,20 +34,54 @@
 
 
     <style amp-custom>
-        @media only screen and (min-width:767px) {
+        @media only screen and (min-width:767px) and (max-width: 1920px) {
 
             .md-device {
                 display: none;
             }
+
         }
 
+         @media only screen and (min-width:767px) and (max-width: 3840px){
+          .md-txt-device{
+                display: none;
+            }
+
+        }
         @media only screen and (max-width:766px) {
 
             .lg-device {
                 display: none;
             }
+
+             .xl-device {
+                display: none;
+            }
+
+            
         }
 
+
+         @media only screen and (min-width:2047px) {
+        .xs-device{
+                display: none;
+            }
+
+            .md-device{
+                display: none;
+            }
+
+            .lg-device{
+                display: none;
+            }
+            
+        }
+
+         @media only screen and (max-width:2046px) {
+        .xl-device{
+                display: none;
+            }
+        }
 
 
         @media only screen and (min-width:320px) {
@@ -127,6 +161,45 @@
                 padding: 0.8rem 0.8rem;
             }
         }
+
+
+        @media only screen and (min-width:2048px) {
+
+            .logo-style {
+                width: 220px;
+                height: 135px;
+                margin-top: -67px;
+                margin-left: 308px;
+            }
+
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+        }
+
+
+
+        @media only screen and (min-width:3840px) {
+
+            .logo-style {
+                width: 220px;
+                height: 135px;
+                margin-top: -67px;
+                margin-left: 230px;
+            }
+
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+
+
+        }
+
+
     </style>
 </head>
 
@@ -233,6 +306,55 @@
     </section>
 
 
+    <section class="mh-full-screen xl-device">
+        <!-- Circle Slider-->
+        <div class="owl-carousel owl-theme circle-slider">
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h3 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h3>
+                                <h1 class="mb-3">Customization Hub</h1>
+                                <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
+                                <p> <a href="whyus.html" class="btn btn-outline-dark">FABRIC OPTIONS</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                                <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h5>
+                                <h2 class="mb-3">Style with a Conscience!</h2>
+                                <p class="lead mb-4">Fashion & Ethics don't have to be mutually exclusive.</p>
+                                <p> <a href="about.html" class="btn btn-outline-dark"> ABOUT US</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h5>
+                                <h2 class="mb-3">To suit your style</h2>
+                                <p class="lead mb-4">Clothing made to fit your needs</p>
+                                <p> <a href="bookings.html" class="btn btn-outline-dark">GET OUTFITTED</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Circle Slider-->
+    </section>
+    
 
     <section class="mh-full-screen md-device">
         <!-- Circle Slider-->
@@ -284,7 +406,9 @@
     </section>
 
     <section class="py-6">
-        <div class="container">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 mx-auto">
             <div class="row">
                 <div class="col-xl-8 mb-5">
                     <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
@@ -299,14 +423,22 @@
 
 
 
-                        <amp-img class="img-fluid" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                        <amp-img class="xs-device img-fluid" layout="responsive" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
                             <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
                         </amp-img>
+
+
+                        <amp-img class="xl-device img-fluid" layout="responsive" width="620" height="620" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                            <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="920" height="920" alt="image"></amp-img>
+                        </amp-img>
+
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail-2.html" class="text-dark td-none">
-                            <h2>Customize<br> your<br> Hoodies </h2>
+                             <h3 class="md-txt-device">Customize<br> your<br> Hoodies </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Hoodies </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Hoodies </h1>
                             <!-- <p class="text-muted">$39.90</p>  -->
                         </a>
                         <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
@@ -315,8 +447,9 @@
                 <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
                     <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
                         <a href="detail.html" class="text-dark td-none">
-                            <h2>Customize<br> your<br> Sweaters </h2>
-                           
+                            <h3 class="md-txt-device">Customize<br> your<br> Sweaters </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Sweaters </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Sweaters </h1>
                         </a>
                         <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
@@ -337,8 +470,9 @@
                 <div class="col-lg-7 mb-4 mb-lg-5 space">
                     <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
                         <a href="detail-2.html" class="text-dark td-none">
-                            <h2>Customize<br> your <br>T Shirts</h2>
-                            
+                            <h3 class="md-txt-device">Customize<br> your <br>T Shirts</h3>
+                            <h2 class="lg-device">Customize<br> your <br>T Shirts</h2>
+                            <h1 class="xl-device">Customize<br> your <br>T Shirts</h1>
                         </a>
                         <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
                     </div>
@@ -367,7 +501,9 @@
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail.html" class="text-dark td-none">
-                            <h2>Customize<br> your<br> Scarves</h2>
+                            <h3 class="md-txt-device">Customize<br> your<br> Scarves</h3>
+                            <h2 class="lg-device">Customize<br> your<br> Scarves</h2>
+                            <h1 class="xl-device">Customize<br> your<br> Scarves</h1>
                             
                         </a>
                         <p> <a class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
@@ -387,7 +523,9 @@
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
                         <a href="detail-2.html" class="text-dark td-none">
-                            <h2>Customize<br> your<br> Pants </h2>
+                               <h3 class="md-txt-device">Customize<br> your<br> Pants </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Pants </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Pants </h1>
                            
                         </a>
                         <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
@@ -397,7 +535,9 @@
                 <div class="col-lg-8 ml-auto space">
                     <div class="position-absolute z-index-5 py-6">
                         <a href="detail.html" class="text-dark td-none">
-                            <h2>Customize<br> your<br> Socks </h2>
+                            <h3 class="md-txt-device">Customize<br> your<br> Socks </h3>
+                            <h2 class="lg-device">Customize<br> your<br> Socks </h2>
+                            <h1 class="xl-device">Customize<br> your<br> Socks </h1>
                            
                         </a>
                         <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
@@ -407,26 +547,32 @@
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
 
-                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img></amp-img>
 
                         </a>
                     </div>
                 </div>
 
             </div>
-        </div>
+            
+    </div>
+</div>
+        <!-- </div> -->
+
     </section>
-    <section class="bg-danger">
+
+
+    <section style="background-color: #c8d0d3;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-white text-center py-7">
+                <div class="col-lg-6 text-black text-center py-6">
                     <h2 class="display-4 text-uppercase mb-4">Pre Order Discount</h2>
                     <p class="mb-0">Up to</p>
                     <h2 class="display-1 font-weight-bold mb-3">30%</h2>
                     <p class="mb-5"> Book your orders in advance</p>
-                    <p><a href="#" class="btn btn-outline-light">BOOKINGS</a></p>
+                    <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
                 </div>
-                <div style="background: right bottom url(img/photo/sale-circle.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
+                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
             </div>
         </div>
     </section>

@@ -13854,7 +13854,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  background-size: contain !important;
+  
 }
 
 @media (max-width: 767.98px) {
