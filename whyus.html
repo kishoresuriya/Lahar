@@ -202,6 +202,7 @@
 
         
     </style>
+     <link rel="manifest" href="manifest.json">
 
 </head>
 
@@ -1201,6 +1202,23 @@
         // pls don't forget to change to your domain :)
         injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');
     </script>
+
+
+     <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').
+            then(function(registration) {
+                // Registration was successful``
+                console.log('ServiceWorker registration successful with scope: ',
+                    registration.scope);
+            }).catch(function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+
+    
     <!-- jQuery-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap JavaScript Bundle (Popper.js included)-->
