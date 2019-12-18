@@ -6,13 +6,13 @@
   "icons": [
   
 	{
-      "src": " img/lahar/LAHAR-192.png",
+      "src": " img/Lahar/LAHAR-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
   
 	{
-      "src": " img/lahar/LAHAR-512.png",
+      "src": " img/Lahar/LAHAR-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
