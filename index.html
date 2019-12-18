@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lahar</title>
-    <meta name="description" content="">
+    <meta name="description" content="Lahar Imports">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" sizes="192x192" href="img/Lahar/apple-touch-icon.png">
      <script async src="https://cdn.ampproject.org/v0.js"></script> 
  
   <link rel="stylesheet" href="concat/css/homepage.css">
@@ -17,12 +18,43 @@
        
 
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
 
     <style amp-custom>
+
+
+
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('concat/css/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('concat/css/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('concat/css/hkgrotesk-light-webfont.woff2') format('woff2'),
+         url('concat/css/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+     font-display:swap;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('concat/css/hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('concat/css/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display:swap;
+}
+
 
         /* cyrillic */
 @font-face {
@@ -297,9 +329,9 @@
 
 
 
-                    <amp-img src="img/Lahar/Logo.webp" layout="responsive" class="img-fluid logo-style" width="230" height="145">
+                    <amp-img src="img/Lahar/Logo.webp" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
 
-                        <amp-img fallback layout="responsive" class="img-fluid logo-style" src="img/Lahar/Logo.png" width="230" height="145"> </amp-img>
+                        <amp-img fallback layout="responsive" class="img-fluid logo-style" src="img/Lahar/Logo.png" width="230" height="145" alt="logo"> </amp-img>
                     </amp-img>
 
                 </a>
@@ -432,7 +464,7 @@
         <!-- Circle Slider-->
         <div class="owl-carousel owl-theme circle-slider">
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; background: right bottom url(img/slider/circle-slider-3.webp) no-repeat; " class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
@@ -446,7 +478,8 @@
                 </div>
             </div>
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;
+                background: right bottom url(img/slider/circle-slider-2.webp) no-repeat;" class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
@@ -460,7 +493,8 @@
                 </div>
             </div>
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat;
+                background: right bottom url(img/slider/circle-slider-1.webp) no-repeat; " class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
@@ -485,7 +519,8 @@
         <!-- Circle Slider-->
         <div class="owl-carousel owl-theme circle-slider text-white">
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat;
+                background: right bottom url(img/slider/circle-slider-3.webp) no-repeat; " class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
@@ -499,7 +534,8 @@
                 </div>
             </div>
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
-                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;
+                background: right bottom url(img/slider/circle-slider-2.webp) no-repeat;" class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
@@ -513,7 +549,8 @@
                 </div>
             </div>
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
-                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat;
+                background: right bottom url(img/slider/circle-slider-1.webp) no-repeat; " class="container circle-slider-bg">
                     <div class="w-100">
                         <div class="row py-5">
                             <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
@@ -542,7 +579,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
-                    <a href="#">
+                    <a href="booking.html" class="text-dark td-none">
 
 
 
@@ -552,24 +589,24 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                     
                             <h2 class="lg-device">Customize<br> your<br> Hoodies </h2>
                             <!-- <p class="text-muted">$39.90</p>  -->
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
                     </div>
                 </div>
                 <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
                     <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                           
                             <h2 class="lg-device">Customize<br> your<br> Sweaters </h2>
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html">
 
 
 
@@ -584,14 +621,14 @@
             <div class="row">
                 <div class="col-md-7 mb-4 mb-lg-5 space">
                     <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                         
                             <h2 class="lg-device">Customize<br> your <br>T Shirts</h2>
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html">
 
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
@@ -603,7 +640,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ml-auto pt-lg-5 mb-4 mb-lg-5 space">
-                    <a href="#" class="text-dark td-none">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
@@ -614,18 +651,18 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                   
                             <h2 class="lg-device">Customize<br> your<br> Scarves</h2>
                             
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-5 pt-lg-3 mb-4 mb-lg-5 space">
-                    <a href="#">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
@@ -635,26 +672,26 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                         
                             <h2 class="lg-device">Customize<br> your<br> Pants </h2>
                            
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
                     </div>
                 </div>
 
                 <div class="col-md-7 ml-auto space">
                     <div class="position-absolute z-index-5 py-6">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                         
                             <h2 class="lg-device">Customize<br> your<br> Socks </h2>
                            
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html" class="text-dark td-none">
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
 
@@ -682,7 +719,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
-                    <a href="#">
+                    <a href="booking.html" class="text-dark td-none">
 
 
 
@@ -692,24 +729,24 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                              <h3 class="md-device">Customize<br> your<br> Hoodies </h3>
                         
                             <!-- <p class="text-muted">$39.90</p>  -->
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
                     </div>
                 </div>
                 <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
                     <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                             <h3 class="md-device">Customize<br> your<br> Sweaters </h3>
                          
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html" class="text-dark td-none">
 
 
 
@@ -724,14 +761,14 @@
             <div class="row">
                 <div class="col-md-7 mb-4 mb-lg-5 space">
                     <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                             <h3 class="md-device">Customize<br> your <br>T Shirts</h3>
                            
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html" class="text-dark td-none">
 
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
@@ -743,7 +780,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 ml-auto pt-lg-5 mb-4 mb-lg-5 space">
-                    <a href="#" class="text-dark td-none">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
@@ -754,18 +791,18 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                             <h3 class="md-device">Customize<br> your<br> Scarves</h3>
                            
                             
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 pt-lg-3 mb-4 mb-lg-5 space">
-                    <a href="#">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
@@ -775,26 +812,26 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                                <h3 class="md-device">Customize<br> your<br> Pants </h3>
                            
                            
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
                     </div>
                 </div>
 
                 <div class="col-md-8 ml-auto space">
                     <div class="position-absolute z-index-5 py-6">
-                        <a href="#" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                             <h3 class="md-device">Customize<br> your<br> Socks </h3>
                            
                            
                         </a>
-                        <p> <a href="#" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="#">
+                        <a href="booking.html" class="text-dark td-none">
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
 
@@ -819,7 +856,7 @@
                     <p class="mb-5"> Book your orders in advance</p>
                     <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
                 </div>
-                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: contain;" class="col-lg-6"></div>
+                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: contain;" class="col-lg-6"></div>
             </div>
         </div>
     </section>
@@ -835,7 +872,7 @@
                     <p class="mb-5"> Book your orders in advance</p>
                     <p><a href="#" class="btn btn-outline-dark">BOOKINGS</a></p>
                 </div>
-                <div style="background: url(img/photo/lahar-homepage.jpg) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
+                <div style="background: url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
             </div>
         </div>
     </section>
@@ -1063,7 +1100,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="background: url(img/slider/circle-slider-3.jpg) no-repeat; background-position: right; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
+                <div style="background: url(img/slider/circle-slider-3.jpg) no-repeat; background: right bottom url(img/slider/circle-slider-3.webp) no-repeat;background-position: right; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
                     
                 </div>
             
@@ -1076,7 +1113,7 @@
                 <div class="col-xl-9 mx-auto">
             <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
                
-                <div style="background: url(img/slider/circle-slider-2.jpg) no-repeat; background-position: left; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
+                <div style="background: url(img/slider/circle-slider-2.jpg) no-repeat; background: right bottom url(img/slider/circle-slider-2.webp) no-repeat;background-position: left; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
                    
                 </div>
 
@@ -1114,7 +1151,7 @@
                     </div>
                 </div>
 
-                     <div style="background: url(img/slider/circle-slider-1.jpg) no-repeat; background-position: right; background-size: cover; " class="circle-slider-bg col-lg-6 mx-auto">
+                     <div style="background: url(img/slider/circle-slider-1.jpg) no-repeat; background: right bottom url(img/slider/circle-slider-1.webp) no-repeat;background-position: right; background-size: cover; " class="circle-slider-bg col-lg-6 mx-auto">
                    
                 </div>
             </div>
@@ -1138,7 +1175,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
-                    <a href="detail-2.html">
+                    <a href="booking.html" class="text-dark td-none">
 
 
 
@@ -1148,24 +1185,24 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                              
                             <h1 class="xl-device">Customize<br> your<br> Hoodies </h1>
                             <!-- <p class="text-muted">$39.90</p>  -->
                         </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;">GET QUOTE</a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;">GET QUOTE</a></p>
                     </div>
                 </div>
                 <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
                     <div class="position-absolute z-index-5 py-lg-6 py-sm-2">
-                        <a href="detail.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                            
                             <h1 class="xl-device">Customize<br> your<br> Sweaters </h1>
                         </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="detail.html">
+                        <a href="booking.html" class="text-dark td-none">
 
 
 
@@ -1180,14 +1217,14 @@
             <div class="row">
                 <div class="col-lg-7 mb-4 mb-lg-5 space">
                     <div class="position-absolute z-index-5 py-lg-4 py-sm-2">
-                        <a href="detail-2.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                             
                             <h1 class="xl-device">Customize<br> your <br>T Shirts</h1>
                         </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE</a></p>
+                        <p> <a href="#" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE</a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="detail-2.html">
+                        <a href="booking.html" class="text-dark td-none">
 
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
@@ -1199,7 +1236,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 ml-auto pt-lg-5 mb-4 mb-lg-5 space">
-                    <a href="detail.html" class="text-dark td-none">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
@@ -1210,18 +1247,18 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                          
                             <h1 class="xl-device">Customize<br> your<br> Scarves</h1>
                             
                         </a>
-                        <p> <a class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 pt-lg-3 mb-4 mb-lg-5 space">
-                    <a href="detail-2.html">
+                    <a href="booking.html" class="text-dark td-none">
 
 
                         <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
@@ -1231,26 +1268,26 @@
 
                     </a>
                     <div class="px-4 position-relative z-index-2 mt--1">
-                        <a href="detail-2.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                              
                            <h1 class="xl-device">Customize<br> your<br> Pants </h1>
                            
                         </a>
-                        <p> <a href="detail-2.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE </a></p>
                     </div>
                 </div>
 
                 <div class="col-lg-8 ml-auto space">
                     <div class="position-absolute z-index-5 py-6">
-                        <a href="detail.html" class="text-dark td-none">
+                        <a href="booking.html" class="text-dark td-none">
                            
                            <h1 class="xl-device">Customize<br> your<br> Socks </h1>
                            
                         </a>
-                        <p> <a href="detail.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+                        <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
                     </div>
                     <div class="ml-6">
-                        <a href="detail.html">
+                        <a href="booking.html" class="text-dark td-none">
 
                             <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
 
@@ -1275,7 +1312,7 @@
                     <p class="mb-5 display-1 text-xl" style="font-size: 2.5rem;"> Book your orders in advance</p>
                     <p><a href="#" class="btn btn-outline-dark btn-lg">BOOKINGS</a></p>
                 </div>
-                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
+                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
             </div>
         </div>
     </div>
@@ -1354,7 +1391,7 @@
                             <div class="input-group mb-3">
                                 <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-outline-secondary btn-lg border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+                                    <button type="submit" class="btn btn-outline-secondary btn-lg border-left-0" aria-label="Submit-Button"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
                                 </div>
                             </div>
                         </form>
