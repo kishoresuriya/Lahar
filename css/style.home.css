@@ -10,7 +10,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4989,7 +4988,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  height: 3px;
+   height: 3px;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -13090,9 +13089,9 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 .navbar .nav-link {
   color: #495057;
   font-weight: 700;
-  /* text-transform: uppercase; */
-  letter-spacing: .10em;
-  font-size: 1.09rem;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .9rem;
 }
 
 .navbar .nav-link i,
@@ -13852,7 +13851,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  
+  background-size: contain !important;
 }
 
 @media (max-width: 767.98px) {
@@ -14565,31 +14564,8 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 @media (min-width: 992px) {
   .about-text {
-    padding: 4rem;
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about-text {
     padding: 7rem;
     max-width: 600px;
-  }
-}
-
-
-@media (min-width: 1920px) {
-  .about-text {
-    padding: 3rem;
-    max-width: 600px;
-  }
-}
-
-
-@media (min-width: 4095px) {
-  .about-text {
-    padding: 2rem;
-    max-width: 900px;
   }
 }
 
@@ -15284,7 +15260,7 @@ a.accordion-link:focus {
 }
 
 .bg-image {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
