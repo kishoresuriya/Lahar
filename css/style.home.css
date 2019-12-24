@@ -13089,9 +13089,9 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 .navbar .nav-link {
   color: #495057;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  font-size: .9rem;
+  
+  letter-spacing: .10em;
+  font-size: 1.09rem;
 }
 
 .navbar .nav-link i,
