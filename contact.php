@@ -10,10 +10,10 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'info@lahar.importandexport.com';
+$fromEmail = 'info@sixtyonesteps.com';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'lahar.importandexport@gmail.com';
+$sendToEmail = 'kishore@sixtyonesteps.com';
 
 // subject of the email
 $subject = 'New Message From EnviroPorts Contact Form';
