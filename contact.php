@@ -16,7 +16,7 @@ $fromEmail = 'info@sixtyonesteps.com';
 $sendToEmail = 'kishore@sixtyonesteps.com';
 
 // subject of the email
-$subject = 'New Message From EnviroPorts Contact Form';
+$subject = 'New Message From Lahar Imports And Exports';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
