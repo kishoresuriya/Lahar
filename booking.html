@@ -168,27 +168,7 @@
 
 
 
-        @media only screen and (min-width:320px) {
-
-            .logo-style {
-                margin-left: -35px;
-
-                margin-top: -45px;
-                height: 90px;
-                width: 180px;
-            }
-
-            .space {
-
-                padding-bottom: 10px;
-            }
-
-               .full-screen {
-  height: calc(75vh - 150px - 2rem);
-
-}
-        }
-
+ 
 
 
         @media only screen and (min-width:320px) and (min-height: 567px) {
@@ -211,10 +191,54 @@
         }
 
 
-        @media only screen and (min-width:411px) {
+     
+
+         @media only screen and (min-width:320px) {
+            .space {
+
+                padding-bottom: 10px;
+            }
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 5px;
+                font-weight: bold;
+            }
 
 
             .logo-style {
+                margin-left: -35px;
+
+                margin-top: -45px;
+                height: 90px;
+                width: 180px;
+            }
+
+           
+
+               .full-screen {
+            height: calc(75vh - 150px - 2rem);
+
+              }
+
+        }
+
+
+
+
+        @media only screen and (min-width:411px) {
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 5px;
+                font-weight: bold;
+            }
+
+
+
+             .logo-style {
                 margin-left: -35px;
 
                 margin-top: -43px;
@@ -232,6 +256,14 @@
         @media only screen and (min-width:768px) {
 
 
+            .logos {
+
+                font-size: 30px;
+                margin-left: 45px;
+                font-weight: bold;
+            }
+
+
 
 
             .logo-style {
@@ -245,12 +277,21 @@
 
 }
 
+
         }
 
         @media only screen and (min-width:992px) {
 
 
-            .logo-style {
+            .logos {
+
+                font-size: 30px;
+                margin-left: 85px;
+                font-weight: bold;
+            }
+
+
+             .logo-style {
                 width: 200px;
                 height: 110px;
                 margin-top: -53px;
@@ -264,6 +305,14 @@
 
         @media only screen and (min-width:1200px) {
 
+            .logos {
+
+                font-size: 30px;
+                margin-left: 55px;
+                font-weight: bold;
+            }
+
+
 
             .logo-style {
                 width: 220px;
@@ -276,45 +325,68 @@
   height: calc(20vh - 155px - 2rem);
 }
 
+
         }
 
 
-        @media only screen and (min-width:1600px) {
+
+         @media only screen and (min-width:1600px) {
 
 
             
              .full-screen {
-  height: calc(20vh - 155px - 2rem);
-}
+            height: calc(20vh - 155px - 2rem);
+            }
         }
+
 
 
         @media only screen and (min-width:1920px) {
 
-            .logo-style {
-                width: 220px;
-                height: 135px;
-                margin-top: -67px;
-                margin-left: 308px;
+            .logos {
+
+                font-size: 30px;
+                margin-left: -160px;
+                font-weight: bold;
             }
 
-            
 
             .navbar {
 
                 padding: 0.8rem 0.8rem;
             }
 
+             .logo-style {
+                width: 220px;
+                height: 135px;
+                margin-top: -67px;
+                margin-left: 308px;
+            }
+
+           
+
 
              .full-screen {
-  height: calc(20vh - 155px - 2rem);
-}
+            height: calc(20vh - 155px - 2rem);
+            }
         }
 
 
         @media only screen and (min-width:2047px) {
 
-            .logo-style {
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: -220px;
+                font-weight: bold;
+            }
+
+             .logo-style {
                 width: 220px;
                 height: 135px;
                 margin-top: -67px;
@@ -323,44 +395,41 @@
 
            
 
+             .full-screen {
+          height: calc(20vh - 155px - 2rem);
+          }
+
+
+        }
+
+
+         @media only screen and (min-width:3840px) {
+
             .navbar {
 
                 padding: 0.8rem 0.8rem;
             }
 
-             .full-screen {
-  height: calc(20vh - 155px - 2rem);
-}
+            .logos {
 
-        }
+                font-size: 60px;
+                margin-left: 440px;
+                font-weight: bold;
+            }
 
 
-        @media only screen and (min-width:3840px) {
-
-            .logo-style {
+             .logo-style {
                 width: 240px;
                 height: 155px;
                 margin-top: -73px;
                 margin-left: 415px;
             }
 
-
-            .navbar {
-
-                padding: 0.8rem 0.8rem;
-            }
-
-          
-
             .full-screen {
-  height: calc(25vh - 225px - 2rem);
-}
-
+          height: calc(25vh - 225px - 2rem);
+          }
 
         }
-
-
-
         
 
 
@@ -377,16 +446,21 @@
         <nav class="lg-device navbar navbar-expand-lg bg-transparent navbar-light navbar-sticky navbar-airy bg-fixed-white">
             <div class="container-fluid">
                 <!-- Navbar Header  -->
-                <a href="index.html" class="navbar-brand">
 
-
-
+               <!-- <a href="index.html" class="navbar-brand">
                     <amp-img src="img/Lahar/Logo.png" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
 
                         <amp-img fallback layout="responsive" class="img-fluid logo-style" src="img/Lahar/Logo.webp" width="230" height="145" alt="logo"> </amp-img>
                     </amp-img>
 
                 </a>
+              -->
+
+                 <a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
+
+                </a>
+
                 <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <!-- Navbar Collapse -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -423,16 +497,23 @@
          <nav class="md-device navbar navbar-expand-lg bg-transparent navbar-light navbar-sticky navbar-airy bg-fixed-white">
             <div class="container-fluid">
                 <!-- Navbar Header  -->
+                <!--
                 <a href="index.html" class="navbar-brand">
 
-
-
-                    <amp-img src="img/Lahar/Logo.png" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
+                 <amp-img src="img/Lahar/Logo.png" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
 
                         <amp-img fallback layout="responsive" class="img-fluid logo-style" src="img/Lahar/Logo.webp" width="230" height="145" alt="logo"> </amp-img>
                     </amp-img>
+                 </a>
+               -->
+
+
+                <a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
 
                 </a>
+
+
                 <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <!-- Navbar Collapse -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -469,16 +550,20 @@
          <nav class="xl-device navbar navbar-expand-lg bg-transparent navbar-light navbar-sticky navbar-airy bg-fixed-white">
             <div class="container-fluid">
                 <!-- Navbar Header  -->
-                <a href="index.html" class="navbar-brand">
-
-
-
-                    <amp-img src="img/Lahar/Logo.png" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
+             <!--   <a href="index.html" class="navbar-brand">
+                     <amp-img src="img/Lahar/Logo.png" layout="responsive" class="img-fluid logo-style" width="230" height="145" alt="logo">
 
                         <amp-img fallback layout="responsive" class="img-fluid logo-style" src="img/Lahar/Logo.webp" width="230" height="145" alt="logo"> </amp-img>
                     </amp-img>
+                </a>
+              -->
+
+
+                <a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
 
                 </a>
+
                 <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <!-- Navbar Collapse -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
