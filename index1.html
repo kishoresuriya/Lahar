@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lahar</title>
+    <meta name="description" content="Lahar Imports">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" sizes="192x192" href="img/Lahar/apple-touch-icon.png">
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" media="none" onload="if(media!='all')media='all'">
+
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.home.css">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/ico.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+
+    <style amp-custom>
+        @font-face {
+            font-family: 'HK Grotesk';
+            src: url('assets/hkgrotesk-bold-webfont.woff2') format('woff2'),
+            url('assets/hkgrotesk-bold-webfont.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HK Grotesk';
+            src: url('assets/hkgrotesk-light-webfont.woff2') format('woff2'),
+            url('assets/hkgrotesk-light-webfont.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HK Grotesk';
+            src: url('assets/hkgrotesk-regular-webfont.woff2') format('woff2'),
+            url('assets/hkgrotesk-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        /* cyrillic */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk72xU.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* vietnamese */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk72xU.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk72xU.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* vietnamese */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWoe5ixi.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* vietnamese */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWEe5ixi.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWAe5ixi.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+
+        @font-face {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5g.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+
+
+        @media only screen and (min-width:3840px) {
+
+            .md-device {
+                display: none;
+            }
+
+            .bg-device {
+                display: none;
+            }
+
+        }
+
+
+
+        @media only screen and (min-width:2050px) and (max-width:3839px) {
+
+            .xl-device {
+                display: none;
+            }
+
+        }
+
+
+        @media only screen and (min-width:2050px) and (max-width:4100px) {
+
+            .md-device {
+                display: none;
+            }
+
+        }
+
+
+        @media only screen and (min-width:767px) and (max-width:2049px) {
+
+            .md-device {
+                display: none;
+            }
+
+            .xl-device {
+                display: none;
+            }
+        }
+
+
+
+         @media only screen and (min-width:1025px) {
+
+
+            .tab-device {
+                display: none;
+            }
+        }
+
+
+
+        @media only screen and (max-width:766px) {
+
+
+            .tab-device {
+                display: none;
+            }
+        }
+
+
+        @media only screen and (min-width:765px) and (max-width:1024px) {
+
+
+            .lg-device {
+                display: none;
+            }
+        }
+
+
+        @media only screen and (min-width:320px) and (max-width:766px) {
+
+
+            .bg-device {
+                display: none;
+            }
+
+            .xl-device {
+                display: none;
+            }
+        }
+
+
+        @media only screen and (min-width:640px) and (max-width:828px) {
+
+            .tab-font {
+                font-size: 40px;
+            }
+        }
+
+
+        @media only screen and (min-width:2160px) and (max-width:4096px) {
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+        }
+
+
+        @media only screen and (min-width:320px) {
+            .space {
+
+                padding-bottom: 10px;
+            }
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 5px;
+                font-weight: bold;
+            }
+
+        }
+
+
+
+
+        @media only screen and (min-width:411px) {
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 5px;
+                font-weight: bold;
+            }
+
+
+        }
+
+        @media only screen and (min-width:768px) {
+
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 45px;
+                font-weight: bold;
+            }
+
+
+        }
+
+        @media only screen and (min-width:992px) {
+
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 85px;
+                font-weight: bold;
+            }
+
+
+        }
+
+        @media only screen and (min-width:1200px) {
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: 55px;
+                font-weight: bold;
+            }
+        }
+
+        @media only screen and (min-width:1920px) {
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: -160px;
+                font-weight: bold;
+            }
+
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+        }
+
+
+        @media only screen and (min-width:2047px) {
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+
+            .logos {
+
+                font-size: 30px;
+                margin-left: -220px;
+                font-weight: bold;
+            }
+
+        }
+
+
+         @media only screen and (min-width:3840px) {
+
+            .navbar {
+
+                padding: 0.8rem 0.8rem;
+            }
+
+            .logos {
+
+                font-size: 60px;
+                margin-left: 440px;
+                font-weight: bold;
+            }
+
+
+           
+
+        }
+
+    </style>
+
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+
+
+
+   
+
+    <header class="header header-absolute md-device">
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy  navbar-sticky bg-fixed-white">
+
+            <div class="container">
+
+
+                <!-- Navbar Header  -->
+
+
+                <a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
+
+                </a>
+
+                <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <!-- Navbar Collapse -->
+
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link active navigat">
+                   
+                  Home</a>
+
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link navigat">About</a>
+                        </li>
+
+                        <!-- /Megamenu end-->
+                        <!-- Multi level dropdown    -->
+                        <li class="nav-item "><a href="faq.html" class="nav-link navigat">F.A.Q.s</a>
+
+                        </li>
+                        <!-- Multi level dropdown end-->
+                        <li class="nav-item"><a href="whyus.html" class="nav-link navigat">Why Us? </a>
+                        </li>
+
+                        <li class="nav-item"><a href="booking.html" class="nav-link navigat">Booking </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- /Navbar -->
+
+
+
+    </header>
+
+
+   
+
+    <section class="mh-full-screen md-device">
+
+
+        <!-- Circle Slider-->
+        <div class="owl-carousel owl-theme circle-slider md-device">
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h5 class="text-uppercase text-white mb-3 letter-spacing-5"> Special</h5>
+                                <h2 class="mb-3 text-white">Customization Hub</h2>
+                                <p class="lead mb-4 text-white">We have a wide variety of fabrics and blends to choose from.</p>
+                                <p> <a href="whyus.html" class="btn btn-outline-light">FABRIC OPTIONS</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
+                <div style="background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;" class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                                <h5 class="text-uppercase text-white mb-3 letter-spacing-5"> FASHION ETHICS</h5>
+                                <h2 class="mb-3 text-white">Style with a Conscience!</h2>
+                                <p class="lead mb-4 text-white">Fashion & Ethics don't have to be mutually exclusive.</p>
+                                <p> <a href="about.html" class="btn btn-outline-light">ABOUT US</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 dark-overlay dark-overlay-md-0">
+                <div style="background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat; " class="container circle-slider-bg">
+                    <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h5 class="text-uppercase text-white mb-3 letter-spacing-5"> TAILORED</h5>
+                                <h2 class="mb-3 text-white"> To suit your style </h2>
+                                <p class="lead mb-4 text-white">Clothing made to fit your needs</p>
+                                <p> <a href="booking.html" class="btn btn-outline-light">GET OUTFITTED</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Circle Slider-->
+    </section>
+
+
+    <section class="py-6 md-device container">
+        <div class="row">
+            <div class="col-md-9 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
+                        <h3 style="color: #6B8E23;">Customize your knitwear</h3>
+                        <p class="lead text-muted">Every product is customizable based on the buyer’s needs including labeling. Costs vary based on customizations chosen. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
+                        <a href="booking.html">
+
+
+
+                            <amp-img class="img-fluid" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                                <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
+                            </amp-img>
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--2">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br>your<br>Hoodies </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
+                        <div class="position-absolute z-index-5 py-5">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Sweaters </h3>
+                            </a>
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Coat.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/Coat.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
+                                </amp-img>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-4 mb-lg-5 space">
+                        <div class="position-absolute z-index-5 py-3">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your <br>T Shirts</h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
+
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/T-Shirts.jpg" class="img-fluid" width="600" height="400" alt="image"></amp-img>
+                                </amp-img>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ml-auto pt-lg-6 mb-4 mb-lg-5 space">
+                        <a href="booking.html" class="text-dark td-none">
+
+
+
+                            <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Scarves.jpg" class="img-fluid" width="300" height="378" alt="image"></amp-img>
+                            </amp-img>
+
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--1">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Scarves</h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 pt-lg-3 mb-4 mb-lg-5 space">
+                        <a href="booking.html">
+
+
+
+                            <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Pants.jpg" class="img-fluid" width="400" height="400" alt="image"></amp-img>
+                            </amp-img>
+
+
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--1">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Pants </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8 ml-auto space">
+                        <div class="position-absolute z-index-5 py-6">
+                            <a href="detail.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Socks </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none btn-lg px-0"> GET QUOTE     </a></p>
+
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
+                                </amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <section class="md-device" style="background-color: #c8d0d3;">
+        <div class="row">
+            <div class="col-xl-12 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6 text-black text-center py-6">
+                        <h3 class=" text-uppercase mt-4 mb-3">Pre Order Discount</h3>
+                        <p class="mb-1">Up to</p>
+                        <h3 class=" font-weight-bold mb-3">30%</h3>
+                        <p class="mb-5 text-lg"> Book your orders in advance</p>
+                        <p><a href="booking.html" class="btn btn-outline-dark btn-md">BOOKINGS</a></p>
+                    </div>
+                    <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="main-footer md-device ">
+        <!-- Services block-->
+        <div class="bg-gray-100 container text-dark-700 py-6">
+            <div class="row">
+                <div class="col-xl-10 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-4 service-column">
+                            <svg class="svg-icon service-icon">
+                <use xlink:href="#delivery-time-1"> </use>
+              </svg>
+                            <div class="service-text">
+                                <h5 class="text-uppercase">Free shipping &amp; return</h5>
+                                <p class="text-muted font-weight-light  text-lg mb-0">Free Shipping over $300</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 service-column">
+                            <svg class="svg-icon service-icon">
+                <use xlink:href="#money-1"> </use>
+              </svg>
+                            <div class="service-text">
+                                <h5 class="text-uppercase">Money back guarantee</h5>
+                                <p class="text-muted font-weight-light text-lg mb-0">30 Days Money Back Guarantee</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 service-column">
+                            <svg class="svg-icon service-icon">
+                <use xlink:href="#customer-support-1"> </use>
+              </svg>
+                            <div class="service-text">
+                                <h5 class="text-uppercase">001-312-978-5743</h5>
+                                <p class="text-muted font-weight-light text-lg mb-0">Call for Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-6 bg-gray-300 container text-muted">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
+                            <h4 class="font-weight-bold text-uppercase  text-dark mb-3">LAHAR<span class="text-primary">.</span></h4>
+                            <p class="text-lg">Style with a Conscience, where Ethics meet Fashion! </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter" ></i></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook"  ></i></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram"  ></i></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest"  ></i></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo" ></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
+                            <h4 class="text-uppercase text-dark mb-3">Company</h4>
+                            <ul class="list-unstyled">
+                                <li> <a href="index.html" class="text-muted">Home  </a></li>
+                                <li> <a href="about.html" class="text-muted">About  </a></li>
+                                <li> <a href="whyus.html" class="text-muted">Whu Us  </a></li>
+                                <li> <a href="faq.html" class="text-muted">FAQ </a></li>
+                                <li> <a href="booking.html" class="text-muted">Bookings                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-8">
+                            <h4 class="text-uppercase text-dark mb-3">Offers & Discounts</h4>
+                            <p class="mb-3" ">Enter your email address to receive latest collections and discounts to your Inbox.</p>
+                        <form action="# "> <!-- id="newsletter-form " -->
+                            <div class="input-group mb-3 ">
+                                <input type="email " placeholder="Your Email Address " aria-label="Your Email Address " class="form-control bg-transparent border-secondary border-right-0 ">
+                                <div class="input-group-append ">
+                                    <button type="submit " class="btn btn-outline-secondary btn-md border-left-0 " aria-label="Submit-Button "> <i class="fa fa-paper-plane text-md text-dark "></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 font-weight-light bg-gray-800 container text-gray-300 ">
+            <div class="row ">
+              <div class="col-lg-9 mx-auto ">
+                <div class="row align-items-center ">
+                    <div class="col-md-6 col-lg-6 text-center text-md-left ">
+                        <p class="mb-md-0 " >&copy; 2019 Lahar.
+                            <!-- By SixtyOneSteps Advertising Pvt Ltd -->All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 ">
+
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right ">
+                            <li class="list-inline-item "><amp-img src="img/visa.svg " alt="... "  class="w-2rem "  layout="responsive " width="100 " height="100 "></amp-img></li>
+                            <li class="list-inline-item "><amp-img layout="responsive " width="100 " height="100 " src="img/mastercard.svg " alt="... " class="w-2rem "></amp-img></li>
+                            <li class="list-inline-item "><amp-img layout="responsive " width="100 " height="100 " src="img/paypal.svg " alt="... " class="w-2rem "></amp-img></li>
+                            <li class="list-inline-item "><amp-img layout="responsive " width="100 " height="100 " src="img/western-union.svg " alt="... " class="w-2rem "></amp-img></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <header class="header header-absolute bg-device">
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy  navbar-sticky bg-fixed-white">
+
+            <div class="container">
+
+
+                <!-- Navbar Header  -->
+
+
+                <a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
+
+                </a>
+
+                <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <!-- Navbar Collapse -->
+
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link active navigat">
+                   
+                  Home</a>
+
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link navigat">About</a>
+                        </li>
+
+                        <!-- /Megamenu end-->
+                        <!-- Multi level dropdown    -->
+                        <li class="nav-item "><a href="faq.html" class="nav-link navigat">F.A.Q.s</a>
+
+                        </li>
+                        <!-- Multi level dropdown end-->
+                        <li class="nav-item"><a href="whyus.html" class="nav-link navigat">Why Us? </a>
+                        </li>
+
+                        <li class="nav-item"><a href="booking.html" class="nav-link navigat">Booking </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- /Navbar -->
+
+
+
+    </header>
+
+     <section class="mh-full-screen bg-device">
+        <!-- Circle Slider-->
+        <div class="owl-carousel owl-theme circle-slider">
+            <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-9 col-lg-9 col-md-10 mx-auto">
+
+                    <div style="padding-top: 20px; " class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+
+                        <div class="col-xl-6 col mx-auto">
+                            <div class="w-100 text-left">
+                                <div class="row py-5">
+                                    <div class="col-xl-12 col-lg-12 py-md-5 py-lg-7 overlay-content">
+                                        <h5 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h5>
+                                        <h2 class="mb-3 " style="color: #6B8E23;">Customization Hub</h2>
+                                        <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
+                                        <p> <a href="whyus.html" class="btn btn-outline-dark btn-md">FABRIC OPTIONS</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background: url(img/slider/circle-slider-3.webp) no-repeat; background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat;background-position: right; background-size: cover;" class=" circle-slider-bg col-xl-6 col mx-auto">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-10 col-md-10 mx-auto">
+                    <div style="padding-top: 20px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+
+                        <div style="background: url(img/slider/circle-slider-2.webp) no-repeat; background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;background-position: left; background-size: cover;" class=" circle-slider-bg col-xl-6 col mx-auto">
+
+                        </div>
+
+                        <div class="col-xl-6 col mx-auto">
+                            <div class="w-100">
+                                <div class="row py-5">
+                                    <div class="col-xl-12 col-lg-12 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                                        <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h5>
+                                        <h2 class="mb-3" style="color: #6B8E23;">Style with a Conscience!</h2>
+                                        <p class="lead mb-4">Fashion & Ethics don't have to be mutually exclusive.</p>
+                                        <p> <a href="about.html" class="btn btn-outline-dark btn-md"> ABOUT US</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-10 col-md-10 mx-auto">
+
+                    <div style="padding-top: 20px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+
+                        <div class="col-lg-6 mx-auto">
+                            <div class="w-100">
+                                <div class="row py-5">
+                                    <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                        <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h5>
+                                        <h2 class="mb-3" style="color: #6B8E23;"> To suit your style</h2>
+                                        <p class="lead mb-4">Clothing made to fit your needs</p>
+                                        <p> <a href="booking.html" class="btn btn-outline-dark btn-md">GET OUTFITTED</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: url(img/slider/circle-slider-1.webp) no-repeat; background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat;background-position: right; background-size: cover; " class="circle-slider-bg col-lg-6 mx-auto">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /Circle Slider-->
+    </section>
+
+
+    <section class="py-6 bg-device">
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-xl-8 col-md-8 col-lg-8 mb-5 bg-device">
+                        <p class="text-uppercase text-muted font-weight-bold mb-1">YOUR STYLE</p>
+                        <h2 style="color: #6B8E23;">Customize your knitwear</h2>
+                        <p class="lead text-muted">Every product is customizable based on the buyer’s needs including labeling. Costs vary based on customizations chosen. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space">
+                        <a href="booking.html">
+
+
+
+                            <amp-img class="img-fluid lg-device" layout="fixed" width="320" height="320" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                                <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="320" height="320" alt="image"></amp-img>
+                            </amp-img>
+
+
+                             <amp-img class="img-fluid tab-device" layout="fixed" width="220" height="220" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                                <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="220" height="220" alt="image"></amp-img>
+                            </amp-img>
+
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--1">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br>your<br>Hoodies </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0">GET QUOTE</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
+                        <div class="position-absolute z-index-5 py-6">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Sweaters </h3>
+                            </a>
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Coat.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/Coat.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
+                                </amp-img>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-4 mb-lg-5 space">
+                        <div class="position-absolute z-index-5 py-6">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your <br>T Shirts</h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE</a></p>
+
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/T-Shirts.jpg" class="img-fluid" width="600" height="400" alt="image"></amp-img>
+                                </amp-img>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ml-auto pt-lg-6 mb-4 mb-lg-5 space">
+                        <a href="booking.html" class="text-dark td-none">
+
+
+
+                            <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Scarves.jpg" class="img-fluid" width="300" height="378" alt="image"></amp-img>
+                            </amp-img>
+
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--1">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Scarves</h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 pt-lg-3 mb-4 mb-lg-5 space">
+                        <a href="booking.html">
+
+
+
+                            <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Pants.jpg" class="img-fluid" width="400" height="400" alt="image"></amp-img>
+                            </amp-img>
+
+
+
+                        </a>
+                        <div class="px-4 position-relative z-index-2 mt--1">
+                            <a href="booking.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Pants </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE </a></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 ml-auto space">
+                        <div class="position-absolute z-index-5 py-6">
+                            <a href="detail.html" class="text-dark td-none">
+                                <h3 style="color: #6B8E23;">Customize<br> your<br> Socks </h3>
+                            </a>
+
+                            <p> <a href="booking.html" class="btn btn-link text-dark td-none btn-lg px-0"> GET QUOTE     </a></p>
+
+                        </div>
+                        <div class="ml-6">
+                            <a href="booking.html">
+
+                                <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
+
+                                    <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img>
+                                </amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-device" style="background-color: #c8d0d3;">
+        <div class="row">
+            <div class="col-xl-12 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6 text-black text-center py-6">
+                        <h3 class=" text-uppercase mt-4 mb-3">Pre Order Discount</h3>
+                        <p class="mb-1">Up to</p>
+                        <h3 class=" font-weight-bold mb-3">30%</h3>
+                        <p class="mb-5 text-lg"> Book your orders in advance</p>
+                        <p><a href="booking.html" class="btn btn-outline-dark btn-md">BOOKINGS</a></p>
+                    </div>
+                    <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer-->
+    <footer class="main-footer bg-device ">
+        <!-- Services block-->
+        <div class="bg-gray-100 text-dark-700 py-6 ">
+            <div class="row ">
+                <div class="col-xl-10 col-lg-10 col-md-10 mx-auto ">
+                <div class="row ">
+                    <div class="col-lg-4 service-column ">
+                        <svg class="svg-icon service-icon ">
+                <use xlink:href="#delivery-time-1 "> </use>
+              </svg>
+                        <div class="service-text ">
+                            <h5 class="text-uppercase ">Free shipping &amp; return</h5>
+                            <p class="text-muted font-weight-light text-lg mb-0 " >Free Shipping over $300</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-column ">
+                        <svg class="svg-icon service-icon ">
+                <use xlink:href="#money-1 "> </use>
+              </svg>
+                        <div class="service-text ">
+                            <h5 class="text-uppercase ">Money back guarantee</h5>
+                            <p class="text-muted font-weight-light text-lg mb-0 " >30 Days Money Back Guarantee</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-column ">
+                        <svg class="svg-icon service-icon ">
+                <use xlink:href="#customer-support-1 "> </use>
+              </svg>
+                        <div class="service-text ">
+                            <h5 class="text-uppercase ">001-312-978-5743</h5>
+                            <p class="text-muted font-weight-light text-lg mb-0 " >Call for Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-6 bg-gray-300 text-muted ">
+            <div class="row ">
+                 <div class="col-xl-10 col-lg-10 col-md-10 mx-auto ">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-6 col-sm-8 mb-5 mb-lg-0 ">
+                        <h4 class="font-weight-bold text-uppercase text-dark mb-3 ">LAHAR<span class="text-primary ">.</span></h4>
+                        <p class="text-lg ">Style with a Conscience, where Ethics meet Fashion! </p>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item "><a href="# " target="_blank " title="twitter " class="text-muted text-hover-primary "><i class="fab fa-twitter " ></i></a></li>
+                            <li class="list-inline-item "><a href="# " target="_blank " title="facebook " class="text-muted text-hover-primary "><i class="fab fa-facebook "  ></i></a></li>
+                            <li class="list-inline-item "><a href="# " target="_blank " title="instagram " class="text-muted text-hover-primary "><i class="fab fa-instagram "  ></i></a></li>
+                            <li class="list-inline-item "><a href="# " target="_blank " title="pinterest " class="text-muted text-hover-primary "><i class="fab fa-pinterest "  ></i></a></li>
+                            <li class="list-inline-item "><a href="# " target="_blank " title="vimeo " class="text-muted text-hover-primary "><i class="fab fa-vimeo " ></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-8 mb-5 mb-lg-0 ">
+                        <h4 class="text-uppercase text-dark mb-3 " >Company</h4>
+                        <ul class="list-unstyled ">
+                            <li> <a href="index.html " class="text-muted ">Home  </a></li>
+                            <li> <a href="about.html " class="text-muted ">About  </a></li>
+                            <li> <a href="whyus.html " class="text-muted ">Whu Us  </a></li>
+                            <li> <a href="faq.html " class="text-muted " >FAQ </a></li>
+                            <li> <a href="booking.html " class="text-muted ">Bookings                    </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-8 col-sm-8 ">
+                        <h4 class="text-uppercase text-dark mb-3 ">Offers & Discounts</h4>
+                        <p class="mb-3 "">Enter your email address to receive latest collections and discounts to your Inbox.</p>
+                            <form action="#">
+                                <!-- id="newsletter-form" -->
+                                <div class="input-group mb-3">
+                                    <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-outline-secondary btn-md border-left-0" aria-label="Submit-Button"> <i class="fa fa-paper-plane text-md text-dark"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 mx-auto">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-6 text-center text-md-left">
+                            <p class="mb-md-0">&copy; 2019 Lahar.
+                                <!-- By SixtyOneSteps Advertising Pvt Ltd -->All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+
+                            <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                                <li class="list-inline-item">
+                                    <amp-img src="img/visa.svg" alt="..." class="w-2rem" layout="responsive" width="100" height="100"></amp-img>
+                                </li>
+                                <li class="list-inline-item">
+                                    <amp-img layout="responsive" width="100" height="100" src="img/mastercard.svg" alt="..." class="w-2rem"></amp-img>
+                                </li>
+                                <li class="list-inline-item">
+                                    <amp-img layout="responsive" width="100" height="100" src="img/paypal.svg" alt="..." class="w-2rem"></amp-img>
+                                </li>
+                                <li class="list-inline-item">
+                                    <amp-img layout="responsive" width="100" height="100" src="img/western-union.svg" alt="..." class="w-2rem"></amp-img>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <header class="header header-absolute xl-device">
+      
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy  navbar-sticky bg-fixed-white">
+        
+        <div class="container-fluid"> 
+
+       
+          <!-- Navbar Header  --><a href="index.html" class="navbar-brand">
+            <a class="text-dark mr-auto logos"> LAHAR </a>
+
+                </a>
+          <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          <!-- Navbar Collapse -->
+          
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link active display-4" style="font-size: 2.5rem;">
+                   
+                  Home</a>
+
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link display-4" style="font-size: 2.5rem;">About</a>
+                        </li>
+
+                        <!-- /Megamenu end-->
+                        <!-- Multi level dropdown    -->
+                        <li class="nav-item "><a href="faq.html" class="nav-link display-4" style="font-size: 2.5rem;">F.A.Q.s</a>
+
+                        </li>
+                        <!-- Multi level dropdown end-->
+                       <li class="nav-item"><a href="whyus.html" class="nav-link display-4" style="font-size: 2.5rem;">Why Us? </a>
+                        </li>
+
+                        <li class="nav-item"><a href="booking.html" class="nav-link display-4" style="font-size: 2.5rem;">Booking </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+        </div>
+    
+      </nav>
+      <!-- /Navbar -->
+      
+      
+      
+    </header>
+
+
+    <section class="mh-full-screen xl-device">
+      <!-- Circle Slider-->
+      <div class="owl-carousel owl-theme circle-slider">
+            <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-9 mx-auto">
+
+        <div style="padding-top: 80px; height: 100vh;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+                
+                <div class="col-xl-6 mx-auto">
+                <div class="w-100 text-left">
+                        <div class="row py-5">
+                            <div class="col-xl-12 col-lg-12 py-md-5 py-lg-7 overlay-content">
+                                <h2 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h2>
+                                <h1 class="mb-3 display-1" style="color: #6B8E23;">Customization Hub</h1>
+                                <p class="lead mb-4 display-2" style="font-size: 3rem;">We have a wide variety of fabrics and blends to choose from.</p>
+                                <p> <a href="whyus.html" class="btn btn-outline-dark btn-lg" style="font-size: 1.5rem;">FABRIC OPTIONS</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url(img/slider/circle-slider-3.webp) no-repeat; background: right bottom url(img/slider/circle-slider-3.jpg) no-repeat;background-position: right; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
+                    
+                </div>
+            
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-9 mx-auto">
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+               
+                <div style="background: url(img/slider/circle-slider-2.webp) no-repeat; background: left bottom url(img/slider/circle-slider-2.jpg) no-repeat;background-position: left; background-size: cover;" class=" circle-slider-bg col-xl-6 mx-auto">
+                   
+                </div>
+
+                <div class="col-xl-6 mx-auto">
+                 <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-12 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
+                                <h2 class="text-uppercase text-info mb-3 letter-spacing-5"> FASHION ETHICS</h2>
+                                <h1 class="mb-3 display-1" style="color: #6B8E23;">Style with a Conscience!</h1>
+                                <p class="lead mb-4 display-2" style="font-size: 3rem;">Fashion & Ethics don't have to be mutually exclusive.</p>
+                                <p> <a href="about.html" class="btn btn-outline-dark btn-lg" style="font-size: 1.5rem;"> ABOUT US</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-gray-100 light-overlay light-overlay-md-0">
+                <div class="col-xl-9 mx-auto">
+          
+            <div style="padding-top: 80px;" class="item d-flex align-items-end bg-gray-100 light-overlay light-overlay-md-0 row">
+               
+                <div class="col-lg-6 mx-auto">
+                 <div class="w-100">
+                        <div class="row py-5">
+                            <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
+                                <h2 class="text-uppercase text-muted mb-3 letter-spacing-5"> TAILORED</h2>
+                                <h1 class="mb-3 display-1" style="color: #6B8E23;">To suit your style</h1>
+                                <p class="lead mb-4 display-2" style="font-size: 3rem;">Clothing made to fit your needs</p>
+                                <p> <a href="booking.html" class="btn btn-outline-dark btn-lg" style="font-size: 1.5rem;">GET OUTFITTED</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                     <div style="background: url(img/slider/circle-slider-1.webp) no-repeat; background: right bottom url(img/slider/circle-slider-1.jpg) no-repeat;background-position: right; background-size: cover; " class="circle-slider-bg col-lg-6 mx-auto">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div>
+
+    </section>
+
+     <section class="py-6 xl-device">
+      <div class="row">
+            <div class="col-xl-9 mx-auto">
+        <div class="row">
+          <div class="col-xl-8 mb-5">
+            <p class="text-uppercase text-muted font-weight-bold mb-1" style="font-size: 2rem;">YOUR STYLE</p>
+            <h2 style="color: #6B8E23;">Customize your knitwear</h2>
+            <p class="lead text-muted" style="font-size: 2rem;">Every product is customizable based on the buyer’s needs including labeling. Costs vary based on customizations chosen.  </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 space"><a href="booking.html">
+
+            
+
+            <amp-img class="img-fluid" layout="fixed" width="920" height="920" src="img/product/lahar-products/Hoodies.webp" alt="image">
+                            <amp-img fallback layout="fixed" src="img/product/lahar-products/Hoodies.jpg" class="img-fluid" width="920" height="920" alt="image"></amp-img>
+                        </amp-img>
+
+          </a>
+            <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
+                <h1 style="color: #6B8E23;">Customize<br>your<br>Hoodies </h1> </a>
+               
+               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;">GET QUOTE</a></p>
+            </div>
+          </div>
+          <div class="col-md-7 ml-auto mb-4 mb-md-5 space">
+            <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
+                <h1 style="color: #6B8E23;">Customize<br> your<br> Sweaters </h1> </a> 
+               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+            </div>
+            <div class="ml-6"><a href="booking.html">
+
+              <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Coat.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Coat.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img> </amp-img>
+
+            </a>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mb-4 mb-lg-5 space">
+            <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
+                <h1 style="color: #6B8E23;">Customize<br> your <br>T Shirts</h1> </a>
+               
+              <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE</a></p>
+
+            </div>
+            <div class="ml-6"><a href="booking.html">
+
+              <amp-img class="img-fluid" layout="responsive" width="600" height="400" src="img/product/lahar-products/T-Shirts.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/T-Shirts.jpg" class="img-fluid" width="600" height="400" alt="image"></amp-img>
+                            </amp-img>
+
+
+            </a></div>
+          </div>
+
+          <div class="col-lg-4 ml-auto pt-lg-6 mb-4 mb-lg-5 space"><a href="booking.html" class="text-dark td-none">
+
+            
+
+               <amp-img class="img-fluid" layout="responsive" width="300" height="378" src="img/product/lahar-products/Scarves.webp" alt="image">
+
+                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Scarves.jpg" class="img-fluid" width="300" height="378" alt="image"></amp-img>
+                        </amp-img>
+
+
+          </a>
+            <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
+                <h1 style="color: #6B8E23;">Customize<br> your<br> Scarves</h1> </a>
+               
+               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 pt-lg-3 mb-4 mb-lg-5 space"><a href="booking.html">
+
+            
+
+              <amp-img class="img-fluid" layout="responsive" width="500" height="500" src="img/product/lahar-products/Pants.webp" alt="image">
+
+                            <amp-img fallback layout="responsive" src="img/product/lahar-products/Pants.jpg" class="img-fluid" width="400" height="400" alt="image"></amp-img>
+                        </amp-img>
+
+
+
+          </a>
+            <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
+                <h1 style="color: #6B8E23;">Customize<br> your<br> Pants </h1> </a>
+                
+              <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0" style="font-size: 2.5rem;"> GET QUOTE </a></p>
+
+            </div>
+          </div>
+          <div class="col-lg-7 ml-auto space">
+            <div class="position-absolute z-index-5 py-6"><a href="detail.html" class="text-dark td-none">
+               <h1 style="color: #6B8E23;">Customize<br> your<br> Socks </h1> </a>
+                
+              <p> <a href="booking.html" class="btn btn-link text-dark td-none btn-lg px-0"  style="font-size: 2.5rem;"> GET QUOTE     </a></p>
+
+            </div>
+            <div class="ml-6"><a href="booking.html">
+
+             <amp-img class="img-fluid" layout="responsive" width="600" height="600" src="img/product/lahar-products/Custom-Socks.webp" alt="image">
+
+                                <amp-img fallback layout="responsive" src="img/product/lahar-products/Custom-Socks.jpg" class="img-fluid" width="600" height="600" alt="image"></amp-img> </amp-img>
+                              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="xl-device" style="background-color: #c8d0d3;">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+            <div class="row">
+                <div class="col-lg-6 text-black text-center py-6">
+                    <h1 class="display-1 text-uppercase mb-4">Pre Order Discount</h1>
+                    <p class="mb-0">Up to</p>
+                    <h1 class="display-1 font-weight-bold mb-3">30%</h1>
+                    <p class="mb-5 display-1 text-xl" style="font-size: 2.5rem;"> Book your orders in advance</p>
+                    <p><a href="booking.html" class="btn btn-outline-dark btn-lg">BOOKINGS</a></p>
+                </div>
+                <div style="background: right bottom url(img/photo/lahar-homepage.jpg) no-repeat; background: right bottom url(img/photo/lahar-homepage.webp) no-repeat; background-size: cover; background-position: center;" class="col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+     <footer class="main-footer xl-device">
+        <!-- Services block-->
+        <div class="bg-gray-100 text-dark-700 py-6">
+            <div class="row">
+                <div class="col-xl-10 mx-auto">
+                <div class="row">
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                <use xlink:href="#delivery-time-1"> </use>
+              </svg>
+                        <div class="service-text">
+                            <h2 class="text-uppercase">Free shipping &amp; return</h2>
+                            <p class="text-muted font-weight-light  text-lg mb-0" style="font-size: 2.5rem;">Free Shipping over $300</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                <use xlink:href="#money-1"> </use>
+              </svg>
+                        <div class="service-text">
+                            <h2 class="text-uppercase">Money back guarantee</h2>
+                            <p class="text-muted font-weight-light text-lg mb-0" style="font-size: 2.5rem;">30 Days Money Back Guarantee</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                <use xlink:href="#customer-support-1"> </use>
+              </svg>
+                        <div class="service-text">
+                            <h2 class="text-uppercase">001-312-978-5743</h2>
+                            <p class="text-muted font-weight-light text-lg mb-0" style="font-size: 2.5rem;">Call for Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-6 bg-gray-300 text-muted">
+            <div class="row">
+                 <div class="col-xl-9 mx-auto">
+                <div class="row">
+                    <div class="col-lg-4  col-md-4 col-sm-8 mb-5 mb-lg-0">
+                        <div class="font-weight-bold text-uppercase  display-4 text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
+                        <p class="text-lg" style="font-size: 2rem;">Style with a Conscience, where Ethics meet Fashion! </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter" style="font-size: 2rem;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook" class="text-muted text-hover-primary"><i class="fab fa-facebook" style="font-size: 2rem;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram" class="text-muted text-hover-primary"><i class="fab fa-instagram" style="font-size: 2rem;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest" class="text-muted text-hover-primary"><i class="fab fa-pinterest" style="font-size: 2rem;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo" class="text-muted text-hover-primary"><i class="fab fa-vimeo" style="font-size: 2rem;"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-8 mb-5 mb-lg-0">
+                        <h3 class="text-uppercase text-dark mb-3" >Company</h3>
+                        <ul class="list-unstyled">
+                            <li> <a href="index.html" class="text-muted" style="font-size: 2rem;">Home                    </a></li>
+                            <li> <a href="about.html" class="text-muted" style="font-size: 2rem;">About                    </a></li>
+                            <li> <a href="whyus.html" class="text-muted" style="font-size: 2rem;">Whu Us                    </a></li>
+                            <li> <a href="faq.html" class="text-muted" style="font-size: 2rem;">FAQ                    </a></li>
+                            <li> <a href="booking.html" class="text-muted">Bookings                    </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8">
+                        <h3 class="text-uppercase text-dark mb-3">Offers & Discounts</h3>
+                        <p class="mb-3" style="font-size: 2rem;">Enter your email address to receive latest collections and discounts to your Inbox.</p>
+                        <form action="#"> <!-- id="newsletter-form" -->
+                            <div class="input-group mb-3">
+                                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-outline-secondary btn-lg border-left-0" aria-label="Submit-Button"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
+            <div class="row">
+              <div class="col-lg-9 mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-6 text-center text-md-left">
+                        <p class="mb-md-0" style="font-size: 2.1rem;">&copy; 2019 Lahar.
+                            <!-- By SixtyOneSteps Advertising Pvt Ltd -->All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                            <li class="list-inline-item"><amp-img src="img/visa.svg" alt="..."  class="w-2rem" style="font-size: 2.1rem;" layout="responsive" width="100" height="100"></amp-img></li>
+                            <li class="list-inline-item"><amp-img layout="responsive" width="100" height="100" src="img/mastercard.svg" alt="..." class="w-2rem"></amp-img></li>
+                            <li class="list-inline-item"><amp-img layout="responsive" width="100" height="100" src="img/paypal.svg" alt="..." class="w-2rem"></amp-img></li>
+                            <li class="list-inline-item"><amp-img layout="responsive" width="100" height="100" src="img/western-union.svg" alt="..." class="w-2rem"></amp-img></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- /Footer end-->
+    <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
+    <!-- JavaScript files-->
+    <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function(e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        // this is set to Bootstrapious website as you cannot 
+        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+        // while using file:// protocol
+        // pls don't forget to change to your domain :)
+        injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').
+            then(function(registration) {
+                // Registration was successful``
+                console.log('ServiceWorker registration successful with scope: ',
+                    registration.scope);
+            }).catch(function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+
+    <!-- jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+
+    <script>
+        var basePath = ''
+    </script>
+
+</body>
+
+</html>
