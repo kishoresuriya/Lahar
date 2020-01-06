@@ -14593,7 +14593,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 @media (min-width: 992px) {
   .about-text {
     padding: 7rem;
-    max-width: 1200px;
+    max-width: 600px;
   }
 }
 

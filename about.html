@@ -38,6 +38,19 @@
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 }
+
+@media  screen and (max-width: 768px){
+  .mds{
+    margin-top: 80px;
+  }
+}
+
+@media  screen and (min-width: 992px){
+  .lgs{
+    margin-top: -120px;
+  }
+}
+
   </style>
 
 <link rel="manifest" href="manifest.json">
@@ -138,16 +151,18 @@
     <section>
 
 
-       <div class="container-fluid">
+       <div class="container-fluid mds">
 
          <div class="row">
-          <div class="col-lg-6 mx-auto">
+          <div class="col-lg-9 col-xl-9 col-md-9 col-sm-12 mx-auto">
           
 
-            <a href="about.html"><img src="img/Lahar/LAHAR.png" alt="" class="img-fluid"> </a>
+            
 
-            <div class="" style="margin-top: -50px;">
-              <h6 class="text-uppercase text-muted letter-spacing-5 mb-1">ABOUT US
+            <div class="mb-5">
+              <a href="about.html"><img src="img/Lahar/LAHAR.png" alt="" class="img-fluid"> </a>
+
+              <h6 class="text-uppercase text-muted letter-spacing-5 lgs mb-1">ABOUT US
 </h6>
               <h2 class="mb-4 h3txt">We are Lahar</h2>
               <p class="text-lg text-muted">Lahar’s imported textile products will not only be environmentally conscious, but also ethic-centric. We make sure all parties involved are registered with Fair-Trade, GOTS & use Organic Cotton. At Lahar we believe that fashion and ethics don’t have to be mutually exclusive, which inspired our motto “Style with a Conscience!”.</p>
@@ -164,7 +179,7 @@
       
      
 
-      <div class="container-fluid">
+      <div class="container-fluid mt-5">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-8 p-lg-0 about-image-column">
              <a href="https://www.fairtradecertified.org/" target="blank"><img src="img/Lahar/Fairtrade-Logo.png" alt="" class="img-fluid"> </a>
