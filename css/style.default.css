@@ -4884,7 +4884,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link:hover, .nav-link:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .nav-link.disabled {
@@ -13180,7 +13180,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
  {
   color: black;
- 
+  text-decoration: underline;
 }
 
 
@@ -13193,7 +13193,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-item .nav-link.active{
-  text-decoration:underline;
+  text-decoration: underline;
   color: black;
 }
 
@@ -14576,12 +14576,12 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 .about-image-column {
   position: relative;
-  min-height: 400px;
+  min-height: 700px;
 }
 
 @media (min-width: 992px) {
   .about-image-column {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 
@@ -14592,7 +14592,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 @media (min-width: 992px) {
   .about-text {
     padding: 7rem;
-    max-width: 600px;
+    max-width: 700px;
   }
 }
 
