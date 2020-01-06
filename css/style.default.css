@@ -4919,9 +4919,8 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  color: blue;
+ 
 }
 
 .nav-tabs .dropdown-menu {
@@ -4936,8 +4935,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #212529;
-  background-color: #e9ecef;
+  color: blue;
+  
 }
 
 .nav-fill .nav-item {
@@ -5295,7 +5294,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.95);
+  color: blue;
 }
 
 .navbar-light .navbar-toggler {
@@ -13194,7 +13193,9 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-item .nav-link.active{
   text-decoration: underline;
-  color: black;
+  background: -webkit-linear-gradient(#000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-light .navbar-toggler,
