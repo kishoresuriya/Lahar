@@ -5328,7 +5328,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffcc34;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -13141,18 +13141,29 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   color: rgba(0, 0, 0, 0.95);
 }
 
-.navbar-light .navbar-nav .nav-link,
+
 .navbar-hover-light:hover .navbar-nav .nav-link,
 .navbar-fixed-light.fixed-top .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.65);
+ color:black;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link{
+  background: -webkit-linear-gradient(#0f0, #526b2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover,
 .navbar-hover-light:hover .navbar-nav .nav-link:hover,
 .navbar-hover-light:hover .navbar-nav .nav-link:focus,
 .navbar-fixed-light.fixed-top .navbar-nav .nav-link:hover,
 .navbar-fixed-light.fixed-top .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.95);
+  
+  background: -webkit-linear-gradient(#000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled,
@@ -13164,16 +13175,26 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active,
 .navbar-hover-light:hover .navbar-nav .show > .nav-link,
-.navbar-hover-light:hover .navbar-nav .active > .nav-link,
 .navbar-hover-light:hover .navbar-nav .nav-link.show,
-.navbar-hover-light:hover .navbar-nav .nav-link.active,
+
+ {
+  color: black;
+ 
+}
+
+
 .navbar-fixed-light.fixed-top .navbar-nav .show > .nav-link,
-.navbar-fixed-light.fixed-top .navbar-nav .active > .nav-link,
 .navbar-fixed-light.fixed-top .navbar-nav .nav-link.show,
-.navbar-fixed-light.fixed-top .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.95);
+.navbar-fixed-light.fixed-top .navbar-nav .active > .nav-link,
+.navbar-hover-light:hover .navbar-nav .active > .nav-link,
+.navbar-hover-light:hover .navbar-nav .nav-link.active,
+.navbar-fixed-light.fixed-top .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+  text-decoration:underline;
+  color: black;
 }
 
 .navbar-light .navbar-toggler,
