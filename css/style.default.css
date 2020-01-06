@@ -14576,12 +14576,13 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 .about-image-column {
   position: relative;
-  min-height: 700px;
+  min-height: 300px;
 }
 
 @media (min-width: 992px) {
   .about-image-column {
-    min-height: 700px;
+    min-height: 500px;
+   
   }
 }
 
@@ -14592,7 +14593,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 @media (min-width: 992px) {
   .about-text {
     padding: 7rem;
-    max-width: 700px;
+    max-width: 1200px;
   }
 }
 
@@ -15295,7 +15296,15 @@ a.accordion-link:focus {
   z-index: 0;
 }
 
-img.bg-image {
+.bg-image-head {
+  position: absolute;
+   
+  width: 80%;
+  height: 80%;
+  z-index: 0;
+}
+
+img.bg-image,img.bg-image-head {
   -o-object-fit: cover;
   object-fit: cover;
   font-family: 'object-fit: cover;';
