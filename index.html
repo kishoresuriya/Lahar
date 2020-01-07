@@ -73,6 +73,125 @@
 
 
 
+.sm-link{
+	--uismLinkDisplay: var(--smLinkDisplay, inline-flex);	
+	--uismLinkTextColor: var(--smLinkTextColor);
+	--uismLinkTextColorHover: var(--smLinkTextColorHover);	
+	
+	display: var(--uismLinkDisplay);
+	color: var(--uismLinkTextColor);
+	position: relative;
+	overflow: hidden;
+}
+
+a.sm-link{
+	text-decoration: none;
+}
+
+.sm-link__label{
+  display: block;
+}
+
+/* sm-link_padding-all */ 
+
+.sm-link_padding-all{
+	--uismLinkLineWeight: var(--smLinkLineWeight, 2px);
+	--uismLinkLineColor: var(--smLinkLineColor, #505357);
+	--uismLinkPadding: var(--smLinkPadding, 5px);
+	
+	padding: var(--uismLinkPadding);
+}
+
+.sm-link_padding-all::before, 
+.sm-link_padding-all::after{
+  width: 100%;
+  height: var(--uismLinkLineWeight);
+  left: 0;
+}
+
+.sm-link_padding-all::before{
+  top: 0;
+}
+
+.sm-link_padding-all::after{
+  bottom: 0;
+}
+
+.sm-link_padding-all .sm-link__label::before,
+.sm-link_padding-all .sm-link__label::after{
+  width: var(--uismLinkLineWeight);
+  height: 100%;
+  top: 0;
+}
+
+.sm-link_padding-all .sm-link__label::before{
+  left: 0;
+}
+
+.sm-link_padding-all .sm-link__label::after{
+  right: 0;
+}
+
+.sm-link_padding-all::before,
+.sm-link_padding-all::after,
+.sm-link_padding-all .sm-link__label::before,
+.sm-link_padding-all .sm-link__label::after{
+  content: "";     
+	background-color: var(--uismLinkLineColor);
+  position: absolute; 
+	opacity: 0;
+	
+	will-change: transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.sm-link_padding-all:hover::before,
+.sm-link_padding-all:hover::after,
+.sm-link_padding-all:hover .sm-link__label::before,
+.sm-link_padding-all:hover .sm-link__label::after{
+	opacity: 1;
+}
+
+
+
+
+/* effect 5 */
+
+.sm-link5::before,
+.sm-link5::after,
+.sm-link5 .sm-link__label::before,
+.sm-link5 .sm-link__label::after{
+	transition-timing-function: ease-out;
+	transition-duration: .2s, .15s;
+	transition-delay: 0s, .15s;	
+}
+
+.sm-link5::before{
+  transform: translate3d(-100%, 0, 0);
+}
+
+.sm-link5::after{
+  transform: translate3d(100%, 0, 0);
+}
+
+.sm-link5 .sm-link__label::before{
+  transform: translate3d(0, 100%, 0);
+}
+
+.sm-link5 .sm-link__label::after{
+  transform: translate3d(0, -100%, 0);
+}
+
+.sm-link5:hover::before,
+.sm-link5:hover::after,
+.sm-link5:hover .sm-link__label::before,
+.sm-link5:hover .sm-link__label::after{
+  transform: translate3d(0, 0, 0);
+	transition-delay: 0s;	
+}
+
+
+
 
     </style>
   </head>
@@ -209,15 +328,41 @@
             <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize</h3>  <h3 class="h3txt">your </h3> <h3 class="h3txt">bag     </h3>
                 </a>
+                <!--
               <p> <a href="booking.html" style="color:#505357;" class="btn btn-link td-none px-0"> GET QUOTE  </a></p>
+              -->
+
+             
+              
+                <p class="mt-3">
+              
+                  <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                    <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                  </a>
+               
+            </p>
+
+
+
             </div>
           </div>
           <div class="col-md-7 ml-auto mb-4 mb-md-5">
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize</h2> <h2 class="h3txt">your</h2>  <h2 class="h3txt">Sweaters     </h2>
                 </a>
-              <p> <a href="booking.html" style="color:#505357;" class="btn btn-link   td-none px-0"> GET QUOTE       </a></p>
-            </div>
+           <!--
+                <p> <a href="booking.html" style="color:#505357;" class="btn btn-link   td-none px-0"> GET QUOTE       </a></p>
+              -->
+
+                <p class="mt-3">
+              
+                  <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                    <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                  </a>
+               
+            </p>
+
+              </div>
             <div class="ml-6"><a href="booking.html"><img src="img/photo/matthew-kane-365718-unsplash-gray-square.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
         </div>
@@ -226,7 +371,17 @@
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize </h2>  <h2 class="h3txt">your</h2> <h2 class="h3txt"> Tees </h2>
                 </a>
+                <!--
               <p> <a href="booking.html" style="color:#505357;" class="btn btn-link   td-none px-0"> GET QUOTE                          </a></p>
+              -->
+              <p class="mt-3">
+              
+                <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                  <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                </a>
+             
+          </p>
+
             </div>
             <div class="ml-6"><a href="booking.html"><img src="img/photo/ian-dooley-347968-unsplash.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
@@ -234,7 +389,18 @@
             <div class="px-4 position-relative z-index-2 mt--1"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize  </h3> <h3 class="h3txt"> your </h3>   <h3 class="h3txt">Scarves</h3>
                 </a>
+                <!--
               <p> <a class="btn btn-link  td-none px-0" style="color:#505357;"> GET QUOTE      </a></p>
+              -->
+
+              <p class="mt-3">
+              
+                <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                  <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                </a>
+             
+          </p>
+
             </div>
           </div>
         </div>
@@ -243,15 +409,43 @@
             <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize </h3>  <h3 class="h3txt">your</h3>  <h3 class="h3txt">Socks</h3> 
                 </a>
+                <!--
               <p> <a href="booking.html" style="color:#505357;" class="btn btn-link  td-none px-0"> GET QUOTE                       </a></p>
-            </div>
+              -->
+           
+           
+              <p class="mt-3">
+              
+                <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                  <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                </a>
+             
+          </p>
+        
+        
+        </div>
           </div>
           <div class="col-lg-8 ml-auto ">
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize </h2> <h2 class="h3txt"> your </h2>  <h2 class="h3txt"> Ethnic wear </h2> 
                 </a>
+                <!--
               <p> <a href="booking.html" style="color:#505357;" class="btn btn-link   td-none px-0"> GET QUOTE     </a></p>
-            </div>
+              -->
+           
+           
+           
+           
+              <p class="mt-3">
+              
+                <a href="booking.html" class="sm-link sm-link_padding-all sm-link5">
+                  <b class="sm-link__label btn btn-link   td-none px-0" style="color:#505357;">GET QUOTE</b>
+                </a>
+             
+          </p>
+        
+        
+        </div>
             <div class="ml-6"><a href="booking.html"><img src="img/photo/serrah-galos-494279-unsplash-square.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
         </div>
