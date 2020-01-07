@@ -55,6 +55,54 @@
 }
 
 
+
+.zoom1 {
+  
+  
+  transition: transform .2s; /* Animation */
+  
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
+
+
+/*----- button 6 -----*/
+.btn-6::before{
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-6::after{
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-6 span::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after{
+  left: 0;
+}
+.btn-6:hover span::before, .btn-6:hover span::after{
+  top: 0;
+}
+
+
+
     </style>
   </head>
   <body>
@@ -69,7 +117,7 @@
                 <li class="list-inline-item pr-3 mr-0">
                   <svg class="svg-icon mr-2">
                     <use xlink:href="#calls-1"> </use>
-                  </svg>020-800-456-747
+                  </svg>+ 13129785743
                 </li>
                 <li class="list-inline-item px-3 border-left d-none d-lg-inline-block">Free shipping on orders over $300</li>
               </ul>
@@ -136,7 +184,7 @@
             <div class="w-100">
               <div class="row py-5">
                 <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
-                  <h5 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h5>
+                  <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> Special</h5>
                   <h2 class="mb-3 h3txt">Customization Hub</h2>
                   <p class="lead mb-4">We have a wide variety of fabrics and blends to choose from.</p>
                   <p> <a href="whyus.html" class="btn btn-outline-dark">FABRIC OPTIONS</a></p>
@@ -150,7 +198,7 @@
             <div class="w-100">
               <div class="row py-5">
                 <div class="col-lg-6 py-md-5 py-lg-7 ml-lg-auto text-md-right overlay-content">
-                  <h5 class="text-uppercase text-info mb-3 letter-spacing-5">   TAILORED</h5>
+                  <h5 class="text-uppercase text-muted mb-3 letter-spacing-5">   TAILORED</h5>
                   <h2 class="mb-3 h3txt"> To suit your style</h2>
                   <p class="lead mb-4">   Clothing made to fit your needs.   </p>
                   <p> <a href="booking.html" class="btn btn-outline-dark">  GET OUTFITTED                           </a></p>
@@ -164,7 +212,7 @@
             <div class="w-100">
               <div class="row py-5">
                 <div class="col-lg-8 py-md-5 py-lg-7 overlay-content">
-                  <h5 class="text-uppercase text-muted mb-3 letter-spacing-5">   FASHION ETHICS    </h5>
+                  <h5 class="text-uppercase text-danger mb-3 letter-spacing-5">   FASHION ETHICS    </h5>
                   <h2 class="mb-3 h3txt"> Style with a Conscience!   </h2>
                   <p class="lead mb-4">  Fashion & Ethics don't have to be mutually exclusive.</p>
                   <p> <a href="about.html" class="btn btn-outline-dark">ABOUT US</a></p>
@@ -186,32 +234,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-4 mb-md-6 pt-lg-3 zoom"><a href="booking.html"><img src="img/product/artboard-bag.jpg" alt="" class="img-fluid"></a>
+          <div class="col-md-4 mb-4 mb-md-6 pt-lg-3"><a href="booking.html"><img src="img/product/artboard-bag.jpg" alt="" class="zoom img-fluid"></a>
             <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize</h3>  <h3 class="h3txt">your </h3> <h3 class="h3txt">bag     </h3>
                 </a>
-              <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE                       </a></p>
+              <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0 btn-6"> GET QUOTE  </a></p>
             </div>
           </div>
-          <div class="col-md-7 ml-auto mb-4 mb-md-5 zoom">
+          <div class="col-md-7 ml-auto mb-4 mb-md-5">
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize</h2> <h2 class="h3txt">your</h2>  <h2 class="h3txt">Sweaters     </h2>
                 </a>
               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE       </a></p>
             </div>
-            <div class="ml-6"><a href="booking.html"><img src="img/photo/matthew-kane-365718-unsplash-gray-square.jpg" alt="" class="img-fluid"></a></div>
+            <div class="ml-6"><a href="booking.html"><img src="img/photo/matthew-kane-365718-unsplash-gray-square.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-7 mb-4 mb-lg-5 zoom">
+          <div class="col-lg-7 mb-4 mb-lg-5">
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize </h2>  <h2 class="h3txt">your</h2> <h2 class="h3txt"> Tees </h2>
                 </a>
               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE                          </a></p>
             </div>
-            <div class="ml-6"><a href="booking.html"><img src="img/photo/ian-dooley-347968-unsplash.jpg" alt="" class="img-fluid"></a></div>
+            <div class="ml-6"><a href="booking.html"><img src="img/photo/ian-dooley-347968-unsplash.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
-          <div class="col-lg-4 ml-auto pt-lg-6 mb-4 mb-lg-5 zoom"><a href="booking.html" class="text-dark td-none"><img src="img/product/lahar-products/Scarves.jpg" alt="" class="img-fluid"></a>
+          <div class="col-lg-4 ml-auto pt-lg-6 mb-4 mb-lg-5"><a href="booking.html" class="text-dark td-none"><img src="img/product/lahar-products/Scarves.jpg" alt="" class="zoom img-fluid"></a>
             <div class="px-4 position-relative z-index-2 mt--1"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize  </h3> <h3 class="h3txt"> your </h3>   <h3 class="h3txt">Scarves</h3>
                 </a>
@@ -220,20 +268,20 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 pt-lg-3 mb-4 mb-lg-5 zoom"><a href="booking.html"><img src="img/product/lahar-products/Custom-Socks.jpg" alt="" class="img-fluid"></a>
+          <div class="col-lg-3 pt-lg-3 mb-4 mb-lg-5"><a href="booking.html"><img src="img/product/lahar-products/Custom-Socks.jpg" alt="" class="zoom1 img-fluid"></a>
             <div class="px-4 position-relative z-index-2 mt--3"><a href="booking.html" class="text-dark td-none">
                 <h3 class="h3txt">Customize </h3>  <h3 class="h3txt">your</h3>  <h3 class="h3txt">Socks</h3> 
                 </a>
               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE                       </a></p>
             </div>
           </div>
-          <div class="col-lg-8 ml-auto zoom">
+          <div class="col-lg-8 ml-auto ">
             <div class="position-absolute z-index-5 py-6"><a href="booking.html" class="text-dark td-none">
                 <h2 class="h3txt">Customize </h2> <h2 class="h3txt"> your </h2>  <h2 class="h3txt"> Ethnic wear </h2> 
                 </a>
               <p> <a href="booking.html" class="btn btn-link text-dark td-none px-0"> GET QUOTE     </a></p>
             </div>
-            <div class="ml-6"><a href="booking.html"><img src="img/photo/serrah-galos-494279-unsplash-square.jpg" alt="" class="img-fluid"></a></div>
+            <div class="ml-6"><a href="booking.html"><img src="img/photo/serrah-galos-494279-unsplash-square.jpg" alt="" class="zoom img-fluid"></a></div>
           </div>
         </div>
       </div>
@@ -306,13 +354,13 @@
             </div>
          
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <h6 class="text-uppercase text-dark mb-3">Company</h6>
+              <h6 class="text-uppercase text-dark mb-3">Menu</h6>
               <ul class="list-unstyled">
-                <li> <a href="index.html" class="text-muted">Home                    </a></li>
-                <li> <a href="about.html" class="text-muted">About                    </a></li>
-                <li> <a href="faq.html" class="text-muted">F.a.q.s                    </a></li>
-                <li> <a href="whyus.html" class="text-muted">Why us?                    </a></li>
-                <li> <a href="booking.html" class="text-muted">Booking                    </a></li>
+                <li> <a href="index.html" class="text-muted text-uppercase">Home                    </a></li>
+                <li> <a href="about.html" class="text-muted text-uppercase">About                    </a></li>
+                <li> <a href="faq.html" class="text-muted text-uppercase">F.a.q.s                    </a></li>
+                <li> <a href="whyus.html" class="text-muted text-uppercase">Why us?                    </a></li>
+                <li> <a href="booking.html" class="text-muted text-uppercase">Booking                    </a></li>
               </ul>
             </div>
             <div class="col-lg-5">
