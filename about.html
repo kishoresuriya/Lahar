@@ -51,6 +51,22 @@
   }
 }
 
+
+
+
+.zoom1 {
+  
+  
+  transition: transform .2s; /* Animation */
+  
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
   </style>
 
 <link rel="manifest" href="manifest.json">
@@ -93,7 +109,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent navbar-sticky navbar-light navbar-airy bg-fixed-white">
         <div class="container-fluid">  
           <!-- Navbar Header  --><a href="index.html" class="navbar-brand">
-           <h3> LAHAR </h3>  </a>
+           <h3 style="color:#505357;"> LAHAR </h3>  </a>
           <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
           <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -182,7 +198,7 @@
       <div class="container-fluid" style="margin-top: 100px;">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-8 p-lg-0 mx-auto about-image-column">
-             <a href="https://www.fairtradecertified.org/" target="blank"><img src="img/Lahar/Fairtrade-Logo.png" alt="" class="img-fluid"> </a>
+             <a href="https://www.fairtradecertified.org/" target="blank"><img src="img/Lahar/Fairtrade-Logo.png" alt="" class="img-fluid zoom1"> </a>
             
             
 
@@ -199,7 +215,7 @@
           <div class="col-xl-6 col-lg-6 col-md-8 mx-auto about-image-column">
             
             <a href="https://www.global-standard.org/" target="blank">
-              <img src="img/Lahar/GOTS-Logo.png" alt="" class="img-fluid">
+              <img src="img/Lahar/GOTS-Logo.png" alt="" class="img-fluid zoom1">
             </a>
 
             <div class="about-text mx-auto mt-2">
@@ -276,7 +292,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LAHAR<span class="text-primary">.</span></div>
+              <div class="font-weight-bold text-uppercase text-lg  mb-3" style="color:#505357;">LAHAR<span class="text-primary">.</span></div>
               <p>Style with a Conscience, where Ethics meet Fashion!.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary"><i class="fab fa-twitter"></i></a></li>
@@ -288,7 +304,7 @@
             </div>
          
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <h6 class="text-uppercase text-dark mb-3">Menu</h6>
+              <h6 class="text-uppercase  mb-3" style="color:#505357;">Menu</h6>
               <ul class="list-unstyled">
                 <li> <a href="index.html" class="text-muted text-uppercase">Home                    </a></li>
                 <li> <a href="about.html" class="text-muted text-uppercase">About                    </a></li>
@@ -298,7 +314,7 @@
               </ul>
             </div>
             <div class="col-lg-5">
-              <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
+              <h6 class="text-uppercase mb-3" style="color:#505357;">Offers & Discounts</h6>
               <p class="mb-3"> Enter your email address to receive latest collections and discounts to your Inbox.</p>
               <form action="#" id="newsletter-form">
                 <div class="input-group mb-3">
