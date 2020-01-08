@@ -14574,6 +14574,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+ 
 }
 
 .about-image-column {
@@ -14598,6 +14599,9 @@ a.text-gray-900:hover, a.text-gray-900:focus {
     max-width: 600px;
   }
 }
+
+
+
 
 .hero-heading {
   text-transform: uppercase;
