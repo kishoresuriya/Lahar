@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/Lahar-logo-256-256.ico">
+    <link rel="shortcut icon" href="img/favicon.png">
    
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
@@ -161,7 +161,7 @@
                 <p class="text-muted">Please feel free to write an email to us or to use our live chat.</p>
                 <ul class="list-unstyled text-muted">
                   
-                  <li>lahar.importandexport@gmail.com</li>
+                  <li>haresh@lahar.us</li>
                 </ul>
               </div>
             </div>
@@ -179,7 +179,7 @@
            <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
            <input type='text' style='display:none;' name='xmIwtLD' value='98f497e527b1764d7e0d669e114e84bc0dae20b145a257f4e36530c36a4eb3bb'></input>
            <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
-           <input type='text' style='display:none;' name='returnURL' value='https://lahar.us/thank-you.html' > </input><br></br>
+           <input type='text' style='display:none;' name='returnURL' value='https://lahar.us/booking.html' > </input><br></br>
            <!-- Do not remove this code. -->
 
               <h4 class="mb-4" style="color: #505357;">Contact form</h4>
@@ -201,12 +201,39 @@
                 <label for="message" class="form-label">Your message for us *</label>
                 <textarea rows="4" name='Description' id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
               </div>
-              <button id='formsubmit' type='submit' value='Submit' class="btn btn-outline-dark">Send message                                    </button>
+              <button id='formsubmit' type='submit' value='Submit' class="btn btn-outline-dark" disabled="disabled" onClick="Confirm(this.form)">Send message                                    </button>
             </form>
+            <script type="text/javascript">
+              function Confirm(form){
+              alert("Thank You For Contacting Us ! You will be Contact Shortly"); 
+              form.submit();
+              }
+              </script>
+              <script>(function() {
+                $('form > input').keyup(function() {
+            
+                    var empty = false;
+                    $('form > input').each(function() {
+                        if ($(this).val() == '') {
+                            empty = true;
+                        }
+                    });
+            
+                    if (empty) {
+                        $('#formsubmit').attr('disabled', 'disabled');
+                    } else {
+                        $('#formsubmit').removeAttr('disabled');
+                    }
+                });
+            })()
+            
+            /* instead of form we can use the IDs of certain fields only. In case not all fields are mandatory */
+            </script>
+              
           </div>
           <div class="col-lg-6 col-xl-6 col-md-5 mx-auto">
             <div class="row mx-auto mt-5">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.7518438419493!2d-87.7246437851822!3d41.962664968098025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdc40cf58e7f%3A0x565dd3543b61a434!2s3749%20W%20Sunnyside%20Ave%2C%20Chicago%2C%20IL%2060625%2C%20USA!5e0!3m2!1sen!2sin!4v1576065203467!5m2!1sen!2sin&zoom=15"   style="border:0; overflow: hidden; width: 100%; height: 300px;" allowfullscreen=""></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!id20000.7518438419493!2d-87.7246437851822!3d41.962664968098025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdc40cf58e7f%3A0x565dd3543b61a434!2s3749%20W%20Sunnyside%20Ave%2C%20Chicago%2C%20IL%2060625%2C%20USA!5e0!3m2!1sen!2sin!4v1576065203467!5m2!1sen!2sin&zoom=15"   style="border:0; overflow: hidden; width: 100%; height: 300px;" allowfullscreen=""></iframe>
             </div>
           </div>
         </div>
@@ -316,6 +343,9 @@
     <!-- /Footer end-->
     <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
     <!-- JavaScript files-->
+
+    
+
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 
