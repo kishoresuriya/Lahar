@@ -200,10 +200,10 @@
                 <label for="message" class="form-label">Your message for us *</label>
                 <textarea rows="4" name='Description' id="message" placeholder="Enter your message" required class="form-control"></textarea>
               </div>
-              <button id='formsubmit' type='submit' value='Submit' class="btn btn-outline-dark"  onClick="Confirm()">Send message                                    </button>
+              <button id='formsubmit' type='submit' value='Submit' class="btn btn-outline-dark"  onClick="Confirm(this.form)">Send message                                    </button>
             </form>
             <script type="text/javascript">
-              function Confirm(){
+              function Confirm(form){
               alert("Thank You For Contacting Us ! You will be Contact Shortly"); 
               form.submit();
               }
