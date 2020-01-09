@@ -14837,7 +14837,7 @@ a.accordion-link:focus {
   display: none;
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   width: 45px;
   height: 45px;
   line-height: 45px;
